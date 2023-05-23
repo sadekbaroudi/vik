@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name "pmw3360")(type "Legacy")(uri "${KIPRJMOD}/libraries/pwm3360.lib")(options "")(descr ""))
+  (lib (name "xiao-rp2040")(type "KiCad")(uri "${KIPRJMOD}/libraries/fingerpunch.pretty/xiao-rp2040.kicad_sym")(options "")(descr ""))
+  (lib (name "barobord")(type "Legacy")(uri "${KIPRJMOD}/libraries/barobord.lib")(options "")(descr ""))
+  (lib (name "keebio")(type "Legacy")(uri "${KIPRJMOD}/libraries/keebio.lib")(options "")(descr ""))
+  (lib (name "Type-C")(type "Legacy")(uri "${KIPRJMOD}/libraries/Type-C.pretty/Type-C.lib")(options "")(descr ""))
+  (lib (name "random-keyboard-parts")(type "Legacy")(uri "${KIPRJMOD}/libraries/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name "kicad-keyboard-parts")(type "Legacy")(uri "${KIPRJMOD}/libraries/kicad-keyboard-parts.pretty/Schematic Library/kicad-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name "SSD1306-128x64_OLED")(type "Legacy")(uri "${KIPRJMOD}/libraries/KiCad-SSD1306-128x64/library/SSD1306-128x64_OLED.lib")(options "")(descr ""))
+  (lib (name "fingerpunch")(type "KiCad")(uri "${KIPRJMOD}/libraries/fingerpunch.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"H1, H2, H3, H4",MountingHole_2.2mm_M2_DIN965_Pad,4,MountingHole,
+J1,FPC-SMD_FPC05012-09200-.5mm-rev,1,Conn_01x12_Female,C479750
+J2,Pimoroni Haptic Buzz DRV2605L Driver,1,Pimoroni,

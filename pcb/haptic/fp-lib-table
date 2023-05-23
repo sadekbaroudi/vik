@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/libraries/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "keyswitches")(type "KiCad")(uri "${KIPRJMOD}/libraries/keyswitches.pretty")(options "")(descr ""))
+  (lib (name "random-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/libraries/random-keyboard-parts.pretty")(options "")(descr ""))
+  (lib (name "Type-C")(type "KiCad")(uri "${KIPRJMOD}/libraries/Type-C.pretty")(options "")(descr ""))
+  (lib (name "fingerpunch")(type "KiCad")(uri "${KIPRJMOD}/libraries/fingerpunch.pretty")(options "")(descr ""))
+  (lib (name "SSD1306")(type "KiCad")(uri "${KIPRJMOD}/libraries/KiCad-SSD1306-128x64/library/SSD1306.pretty")(options "")(descr ""))
+  (lib (name "other_parts")(type "KiCad")(uri "${KIPRJMOD}/libraries/other_parts.pretty")(options "")(descr ""))
+  (lib (name "kicad-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-keyboard-parts.pretty")(options "")(descr ""))
+)
