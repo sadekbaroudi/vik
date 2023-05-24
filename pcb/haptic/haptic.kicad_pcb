@@ -234,6 +234,46 @@
     (pad "1" thru_hole circle (at 0 0) (size 3.8 3.8) (drill 2.2) (layers *.Cu *.Mask) (tstamp 08f57027-67e1-4142-acd1-ac1dbf3dcca4))
   )
 
+  (footprint "fingerpunch:vik-logo-small" (layer "F.Cu")
+    (tedit 0) (tstamp 67755571-dae3-4a44-ac59-117f95d19fb1)
+    (at 175.025 103.55)
+    (attr smd)
+    (fp_text reference "REF**" (at 0.18 -3.29 unlocked) (layer "User.1")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 842a7f30-7e4b-45ac-ac02-94be4afc2b33)
+    )
+    (fp_text value "vik-logo-small" (at 0.05 4.33 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp f4757445-eb3a-42a3-ab39-8ed2a3b85e75)
+    )
+    (fp_text user "${REFERENCE}" (at 0.4 0.21 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp c18106f6-ddee-486a-b03f-60e9bc56d3a7)
+    )
+    (fp_line (start 2.38 -1.52) (end -0.001902 2.605575) (layer "F.SilkS") (width 0.1) (tstamp 0c519ce3-e255-448b-baf7-eb3168f74d24))
+    (fp_line (start -0.001902 2.605575) (end -2.383804 -1.52) (layer "F.SilkS") (width 0.1) (tstamp 0f02eecd-a17e-413d-a3d0-ec732ee31991))
+    (fp_line (start 2.869715 -1.793686) (end 2.375449 -0.938393) (layer "F.SilkS") (width 0.1) (tstamp 194d98cc-c781-4d21-acb0-7dae86d91947))
+    (fp_line (start -2.383804 -1.52) (end 2.38 -1.52) (layer "F.SilkS") (width 0.1) (tstamp 1a8ba231-d077-4049-a4ad-8d8e390bc4a6))
+    (fp_line (start 0.741256 -1.793386) (end 2.869715 -1.793686) (layer "F.SilkS") (width 0.1) (tstamp 2b5a9c0b-ec2b-4283-865f-4e3b1fd8a91e))
+    (fp_line (start 1.064084 1.351662) (end 0.000114 3.195112) (layer "F.SilkS") (width 0.1) (tstamp 48cb9a0f-ef7a-44e5-94df-04a4aaacd8f5))
+    (fp_line (start -1.815689 0.036813) (end -2.880161 -1.806346) (layer "F.SilkS") (width 0.1) (tstamp 64a2d874-0d32-49be-82d4-6def5133065c))
+    (fp_line (start -2.880161 -1.806346) (end -1.892323 -1.805976) (layer "F.SilkS") (width 0.1) (tstamp 8f12f196-8d6b-4c51-8451-b3315569ac07))
+    (fp_line (start 0.000114 3.195112) (end -0.493459 2.339419) (layer "F.SilkS") (width 0.1) (tstamp c95abe27-b3be-4c61-8cd8-d1215d392803))
+    (group "" (id 5b09aede-b654-49b2-b0a1-f3d80998c9bb)
+      (members
+        0c519ce3-e255-448b-baf7-eb3168f74d24
+        0f02eecd-a17e-413d-a3d0-ec732ee31991
+        194d98cc-c781-4d21-acb0-7dae86d91947
+        1a8ba231-d077-4049-a4ad-8d8e390bc4a6
+        2b5a9c0b-ec2b-4283-865f-4e3b1fd8a91e
+        48cb9a0f-ef7a-44e5-94df-04a4aaacd8f5
+        64a2d874-0d32-49be-82d4-6def5133065c
+        8f12f196-8d6b-4c51-8451-b3315569ac07
+        c95abe27-b3be-4c61-8cd8-d1215d392803
+      )
+    )
+  )
+
   (footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp aef0b8a0-a10c-484a-bea8-74e5a02f11dd)
     (at 166.37 138.43)
@@ -284,6 +324,46 @@
     (fp_circle (center 0 0) (end 1.9 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp f931924b-ad26-41a7-b71d-689b455d1804))
     (fp_circle (center 0 0) (end 2.15 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 5fb4bd5f-e927-436f-b5a6-915ba8f9e4a5))
     (pad "1" thru_hole circle (at 0 0) (size 3.8 3.8) (drill 2.2) (layers *.Cu *.Mask) (tstamp b4bf07e8-1d9a-4cf9-aaac-7555e85a8d0b))
+  )
+
+  (footprint "fingerpunch:vik-logo-small" (layer "B.Cu")
+    (tedit 0) (tstamp 4011def8-d35d-4287-9a20-2e0a553646d8)
+    (at 175.025 103.55 180)
+    (attr smd)
+    (fp_text reference "REF**" (at 0.18 3.29 unlocked) (layer "User.1")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 0ca67f91-b56e-4bf3-8e8b-7356a5a10a22)
+    )
+    (fp_text value "vik-logo-small" (at 0.05 -4.33 unlocked) (layer "B.Fab")
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (tstamp 88fed5d4-15e1-45f5-b5f7-5de18afa02d4)
+    )
+    (fp_text user "${REFERENCE}" (at 0.4 -0.21 unlocked) (layer "B.Fab")
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (tstamp c0dd2423-50bf-4122-91fc-aa17d8e05695)
+    )
+    (fp_line (start -1.815689 -0.036813) (end -2.880161 1.806346) (layer "B.SilkS") (width 0.1) (tstamp 09015fe7-846b-4544-ba17-9816ea757c75))
+    (fp_line (start 2.869715 1.793686) (end 2.375449 0.938393) (layer "B.SilkS") (width 0.1) (tstamp 2783f1f3-3049-446d-a7ff-0ed56cbf9ac9))
+    (fp_line (start -0.001902 -2.605575) (end -2.383804 1.52) (layer "B.SilkS") (width 0.1) (tstamp 30935bd5-a331-440f-9da3-e207c399d7e4))
+    (fp_line (start 0.000114 -3.195112) (end -0.493459 -2.339419) (layer "B.SilkS") (width 0.1) (tstamp 4561f212-9064-4d61-9f17-6c7de25316da))
+    (fp_line (start -2.383804 1.52) (end 2.38 1.52) (layer "B.SilkS") (width 0.1) (tstamp 7aaded38-2a42-48b7-aa54-8ed521c34fbd))
+    (fp_line (start -2.880161 1.806346) (end -1.892323 1.805976) (layer "B.SilkS") (width 0.1) (tstamp 86bdcddc-6554-4f98-a326-8deccc5135ae))
+    (fp_line (start 2.38 1.52) (end -0.001902 -2.605575) (layer "B.SilkS") (width 0.1) (tstamp b07f9c74-aef5-4f4a-8eb9-9b21bd767e28))
+    (fp_line (start 0.741256 1.793386) (end 2.869715 1.793686) (layer "B.SilkS") (width 0.1) (tstamp b0c4ef51-d939-4afa-9a30-e46c8697a337))
+    (fp_line (start 1.064084 -1.351662) (end 0.000114 -3.195112) (layer "B.SilkS") (width 0.1) (tstamp deea427d-3097-48a6-8c97-9665678a9a00))
+    (group "" (id 225d4984-e382-44e1-8613-4bf77db72750)
+      (members
+        09015fe7-846b-4544-ba17-9816ea757c75
+        2783f1f3-3049-446d-a7ff-0ed56cbf9ac9
+        30935bd5-a331-440f-9da3-e207c399d7e4
+        4561f212-9064-4d61-9f17-6c7de25316da
+        7aaded38-2a42-48b7-aa54-8ed521c34fbd
+        86bdcddc-6554-4f98-a326-8deccc5135ae
+        b07f9c74-aef5-4f4a-8eb9-9b21bd767e28
+        b0c4ef51-d939-4afa-9a30-e46c8697a337
+        deea427d-3097-48a6-8c97-9665678a9a00
+      )
+    )
   )
 
   (footprint "fingerpunch:FPC-SMD_FPC05012-09200-.5mm-rev" (layer "B.Cu")
