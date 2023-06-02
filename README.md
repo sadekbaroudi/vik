@@ -9,6 +9,8 @@ VIK is a standard for a data interface between printed circuit boards. It is int
 The standard specifies only a couple of things:
 1. The type of connector
 2. The signals mapped to each pin on the connector
+3. The type of cable
+4. Inclusion of the VIK logo on the PCB
 
 ### What value does this bring?
 
@@ -71,6 +73,14 @@ Here is an example schematic for the keyboard FPC connector:
 Here is an example schematic for the module FPC connector:
 
 ![vik fpc module](images/vik-interface-module-side.png)
+
+### VIK logo
+
+So long as you adhere to the specs above, you can consider your keyboard pcb or module VIK enabled. The last thing you do before publishing or manufacturing your PCB is to include the VIK logo.
+
+There are a collection of logos you can use in the root directory of this repository, all prefixed with `vik-logo`. For instance, you could take the pre-made kicad footprints and include them on your pcb. If you aren't using kicad, there is a dxf and svg you can use as well.
+
+![vik logo example](images/vik-logo-example.png)
 
 ### Other considerations
 
