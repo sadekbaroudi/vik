@@ -62,7 +62,7 @@ The interface includes the following signals:
 * MISO
 * SCLK
 
-The order specified above is the order they should be used on the FPC connector on the **module side**, pins 1 through 12. For the main keyboard pcb, they should be inverted, since the cable will automatically invert the order when connected.
+The order specified above is the order they should be used on the FPC connector on the **keyboard side**, pins 1 through 12. For the module pcbs, they should be inverted, since the cable will automatically invert the order when connected.
 
 Here is an example schematic for the keyboard FPC connector:
 
