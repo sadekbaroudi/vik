@@ -40,6 +40,12 @@ The required connector is a FPC 12 pin 0.5mm pitch connector. It should be avail
 
 ![fpc 12 pin 0.5mm clamshell](images/fpc-12pin-clamshell.png)
 
+### Cable
+
+The cable should be a 12 pin 0.5mm pitch FPC Type A cable (leads are exposed on the same side).
+
+The specs below state that you must invert the connector pin order between the keyboard and the module, which means Type A is required.
+
 ### Interface
 
 The interface includes the following signals:
