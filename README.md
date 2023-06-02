@@ -87,12 +87,25 @@ There are a collection of logos you can use in the root directory of this reposi
 1. Please note that the responsibility is on the module side to set up pull up resistors for I2C. This could be easily missed, and should be considered when designing a module.
 2. For the keyboard side of the interface, if you skip any of the specified signals above, you are not guaranteed to work with all modules.
 
-## Reference designs
+## Design guidelines and recommendations
 
-For the keyboard side, I created a keyboard called [vulpes-minora](http://github.com/sadekbaroudi/vulpes-minora). This keyboard has been manufactured and tested to work with VIK modules.
+### Reference designs
+
+For the keyboard side, I created a keyboard called [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora). This keyboard has been manufactured and tested to work with VIK modules.
 
 For the module side, please see the pcb directory in this repository. Each subdirectory within it has a module that you can review to see how these are implemented.
 
+### Microcontroller selection
+
+If you are designing a keyboard pcb that uses a dev board as a controller (e.g. pro micro, elite-c, stemcell, etc), you should consider that the VIK specs calls for 3.3V and 5V. Given these controllers operate on 5V and don't provide 3.3V, you won't be able to use them for VIK compatibility without additonal circuitry to convert 5V to 3.3V.
+
+Some options include:
+1. Support only RP2040 based controllers (e.g. splinky, elite-pi, helios), where VCC is 3.3V, and the RAW pin provides 5V
+2. Support other 5V controllers, and use something like an LDO to convert 5V to 3.3V for the VIK 3.3V signal
+3. Anything you want, as long as you can provide 5V and 3.3V
+
+The vulpes minora is an example of point number 1 above.
+
 ## Known list of compatible keyboards
 
-* [vulpes-minora](http://github.com/sadekbaroudi/vulpes-minora)
+* [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora)
