@@ -92,3 +92,7 @@ There are a collection of logos you can use in the root directory of this reposi
 For the keyboard side, I created a keyboard called [vulpes-minora](http://github.com/sadekbaroudi/vulpes-minora). This keyboard has been manufactured and tested to work with voltron modules.
 
 For the module side, please see the pcb directory in this repository. Each subdirectory within it has a module that you can review to see how these are implemented.
+
+## Known list of compatible keyboards
+
+* [vulpes-minora](http://github.com/sadekbaroudi/vulpes-minora)
