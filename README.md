@@ -82,11 +82,6 @@ There are a collection of logos you can use in the root directory of this reposi
 
 ![vik logo example](images/vik-logo-example.png)
 
-### Other considerations
-
-1. Please note that the responsibility is on the module side to set up pull up resistors for I2C. This could be easily missed, and should be considered when designing a module.
-2. For the keyboard side of the interface, if you skip any of the specified signals above, you are not guaranteed to work with all modules.
-
 ## Design guidelines and recommendations
 
 ### Reference designs
@@ -94,6 +89,18 @@ There are a collection of logos you can use in the root directory of this reposi
 For the keyboard side, I created a keyboard called [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora). This keyboard has been manufactured and tested to work with VIK modules.
 
 For the module side, please see the pcb directory in this repository. Each subdirectory within it has a module that you can review to see how these are implemented.
+
+### I2C guidelines
+
+#### Keyboard pcb
+
+As mentioned above, the responsibility of using pull up resistors is on the VIK modules. This may cause challenges for a few reasons. You may want (or need) to use I2C on the main keyboard PCB, which means you need to use pull up resistors. If this is the case, please provide instructions to inform the users that when using VIK modules, they will need to remove the pull up resistors.
+
+#### Module pcb
+
+When designing a module, please ensure that you include pull up resistors, since the guidelines state that the keyboard pcb is not responsible for it.
+
+It may be tempting to use the I2C gpio for purposes other than I2C. For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. If you decide to do this, the keyboard certification card
 
 ### Microcontroller selection
 
@@ -106,6 +113,73 @@ Some options include:
 
 The vulpes minora is an example of point number 1 above.
 
-## Known list of compatible keyboards
+## VIK certification
+
+In order to be VIK certified, you should be compliant with everything above, and have your keyboard or module reviewed. Upon review, the reviewer will make a card for your pcb, as explained below.
+
+### VIK keyboard certification card
+
+#### Descriptions
+
+* **FPC connector:** has the correct FPC connector (**TODO: Link to connector footprint, both horizontal and vertical**)
+* **Breakout pins:** includes breakout pins using the VIK breakout pin footprint (**TODO: Link to breakout footprint**). This allows easy access to all the signals. Also, the footprint is compatible with * a hand solderable FPC breakout board (**TODO: Link to breakout board**).
+* **Supplies: SPI** supplies SPI
+* **Supplies: I2C:** supplies I2C
+* **I2C on main PCB:** Does the main PCB use any I2C already. If this is true, the next field must have a value
+* **I2C pull ups:** I2C pull up resistor value, :x: if no pull ups on the main pcb, or resistor value if present
+* **Supplies: RGB:** supplies RGB data out
+* **Supplies: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Digital Only | Analog/Digital**)
+
+#### Keyboard sample card
+
+| Category                 | Classification          | Response           |
+| -----------------------  | ----------------------- | ------------------ |
+| FPC connector            | Required                | :heavy_check_mark: |
+| Breakout pins            | Recommended             | :x:                |
+| Supplies: SPI            | Strongly recommended    | :heavy_check_mark: |
+| Supplies: I2C            | Strongly recommended    | :heavy_check_mark: |
+| I2C on main PCB          | Discouraged             | :heavy_check_mark: |
+| I2C pull ups             | Informative             | 2.2kΩ              |
+| Supplies: RGB            | Strongly recommended    | :x:                |
+| Supplies: Extra GPIO     | Strongly recommended    | No                 |
+
+### VIK module certification card
+
+#### Descriptions
+
+* **FPC connector:** has the correct FPC connector (**TODO: Link to connector footprint, both horizontal and vertical**) with the right pinout, and is completely wired to specification
+* **Breakout pins:** includes breakout pins using the VIK breakout pin footprint (**TODO: Link to breakout footprint**). This allows easy access to all the signals. Also, the footprint is compatible with * a hand solderable FPC breakout board (**TODO: Link to breakout board**).
+* **Uses: SPI:** the module is utilizing SPI
+* **SPI used for SPI only:** if you are using any of the SPI gpio for any purpose other than SPI, this will remain unchecked. This means that keyboard pcbs that use SPI will be incompatible with this module.
+* **Uses: I2C:**
+* **I2C used for I2C only:** if you are using any of the I2C gpio for any purpose other than I2C, this will remain unchecked. This means that keyboard pcbs that use I2C will be incompatible with this module.
+* **I2C pull ups:** I2C pull up resistor value
+* **Uses: RGB:** uses RGB data out
+* **Uses: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Analog | Digital**), along with what it's used for.
+
+#### Module sample card
+
+| Category                | Classification          | Response           |
+| ----------------------- | ----------------------- | ------------------ |
+| FPC connector           | Required                | :heavy_check_mark: |
+| Breakout pins           | Recommended             | :x:                |
+| Uses: SPI               | Optional                | :heavy_check_mark: |
+| SPI used for SPI only   | Strongly recommended    | :heavy_check_mark: |
+| Uses: I2C               | Optional                | :heavy_check_mark: |
+| I2C used for I2C only   | Strongly Recommended    | :heavy_check_mark: |
+| I2C pull ups            | Required                | 4.7kΩ              |
+| Uses: RGB               | Optional                | :x:                |
+| Uses: Extra GPIO        | Optional                | No                 |
+
+## Known list of VIK certifications
+
+### Keyboards
 
 * [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora)
+
+### Modules
+
+* [haptic](https://github.com/sadekbaroudi/vik/tree/master/pcb/haptic)
+* [pers60-cirque-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/pers60-cirque-leds)
+* [pers60-pmw3360-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/pers60-pmw3360-leds)
+* [pmw3360](https://github.com/sadekbaroudi/vik/tree/master/pcb/pmw3360)
