@@ -130,7 +130,9 @@ In order to be VIK certified, you should be compliant with everything above, and
 * **Supplies: RGB:** supplies RGB data out
 * **Supplies: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Digital Only | Analog/Digital**)
 
-#### Keyboard sample card
+#### Keyboard sample cards
+
+General example:
 
 | Category                 | Classification          | Response           |
 | -----------------------  | ----------------------- | ------------------ |
@@ -142,6 +144,19 @@ In order to be VIK certified, you should be compliant with everything above, and
 | I2C pull ups             | Informative             | 2.2kΩ              |
 | Supplies: RGB            | Strongly recommended    | :x:                |
 | Supplies: Extra GPIO     | Strongly recommended    | No                 |
+
+A "perfect" keyboard card would look like this:
+
+| Category                 | Classification          | Response           |
+| -----------------------  | ----------------------- | ------------------ |
+| FPC connector            | Required                | :heavy_check_mark: |
+| Breakout pins            | Recommended             | :heavy_check_mark: |
+| Supplies: SPI            | Strongly recommended    | :heavy_check_mark: |
+| Supplies: I2C            | Strongly recommended    | :heavy_check_mark: |
+| I2C on main PCB          | Discouraged             | :x:                |
+| I2C pull ups             | Informative             | N/A                |
+| Supplies: RGB            | Strongly recommended    | :heavy_check_mark: |
+| Supplies: Extra GPIO     | Strongly recommended    | :heavy_check_mark: |
 
 ### VIK module certification card
 
@@ -158,6 +173,8 @@ In order to be VIK certified, you should be compliant with everything above, and
 * **Uses: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Analog | Digital**), along with what it's used for.
 
 #### Module sample card
+
+General example:
 
 | Category                | Classification          | Response           |
 | ----------------------- | ----------------------- | ------------------ |
