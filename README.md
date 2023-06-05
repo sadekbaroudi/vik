@@ -141,7 +141,7 @@ As mentioned above, the responsibility of using pull up resistors is on the VIK 
 
 When designing a module, please ensure that you include pull up resistors, since the guidelines state that the keyboard pcb is not responsible for it.
 
-It may be tempting to use the I2C gpio for purposes other than I2C. For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. If you decide to do this, the keyboard certification card
+It may be tempting to use the I2C gpio for purposes other than I2C. For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. If you decide to do this, the [VIK certification](#VIK-certification) card will be flagged as a failure. While this is acceptable, it means that your module will not work with a fair number of keyboards, since many use I2C.
 
 ### Microcontroller selection
 
@@ -162,8 +162,8 @@ In order to be VIK certified, you should be compliant with everything above, and
 
 #### Descriptions
 
-* **FPC connector:** has the correct FPC connector (**TODO: Link to connector footprint, both horizontal and vertical**)
-* **Breakout pins:** includes breakout pins using the VIK breakout pin footprint (**TODO: Link to breakout footprint**). This allows easy access to all the signals. Also, the footprint is compatible with * a hand solderable FPC breakout board (**TODO: Link to breakout board**).
+* **FPC connector:** has the correct FPC connector with the right pinout, and is wired to specificaton. See the connectors in the kicad/vik.pretty directory
+* **Breakout pins:** includes breakout pins using the [VIK breakout pin footprint](https://github.com/sadekbaroudi/vik/blob/master/kicad/vik.pretty/vik-keyboard-throughole.kicad_mod), or has through holes for all the signals. This allows easy access to all the signals. Also, the footprint is compatible with a [hand solderable FPC breakout board](https://www.amazon.com/uxcell-Converter-Couple-Extend-Adapter/dp/B07RVD1J1K).
 * **Supplies: SPI** supplies SPI
 * **Supplies: I2C:** supplies I2C
 * **I2C on main PCB:** Does the main PCB use any I2C already. If this is true, the next field must have a value
@@ -203,8 +203,8 @@ A "perfect" keyboard card would look like this:
 
 #### Descriptions
 
-* **FPC connector:** has the correct FPC connector (**TODO: Link to connector footprint, both horizontal and vertical**) with the right pinout, and is completely wired to specification
-* **Breakout pins:** includes breakout pins using the VIK breakout pin footprint (**TODO: Link to breakout footprint**). This allows easy access to all the signals. Also, the footprint is compatible with * a hand solderable FPC breakout board (**TODO: Link to breakout board**).
+* **FPC connector:** has the correct FPC connector with the right pinout, and is wired to specificaton. See the connectors in the kicad/vik.pretty directory
+* **Breakout pins:** includes breakout pins using the [VIK breakout pin footprint](https://github.com/sadekbaroudi/vik/blob/master/kicad/vik.pretty/vik-keyboard-throughole.kicad_mod), or has through holes for all the signals. This allows easy access to all the signals. Also, the footprint is compatible with a [hand solderable FPC breakout board](https://www.amazon.com/uxcell-Converter-Couple-Extend-Adapter/dp/B07RVD1J1K).
 * **Uses: SPI:** the module is utilizing SPI
 * **SPI used for SPI only:** if you are using any of the SPI gpio for any purpose other than SPI, this will remain unchecked. This means that keyboard pcbs that use SPI will be incompatible with this module.
 * **Uses: I2C:**
