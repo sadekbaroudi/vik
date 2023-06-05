@@ -29,7 +29,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
     (tstamp 744b139f-0d05-4839-aa34-c34f851b8c63)
   )
-  (fp_text user "SPI CS" (at -3.6 -7.3 270 unlocked) (layer "F.SilkS")
+  (fp_text user "SPI CS" (at -2.38 -2.46 90 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
     (tstamp 9e97d068-77ee-4d3a-9b9c-8d886d830744)
   )
