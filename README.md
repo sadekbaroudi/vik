@@ -64,7 +64,7 @@ The interface includes the following signals:
 * MISO
 * SCLK
 
-The order specified above is the order they should be used on the FPC connector on the **keyboard side**, pins 1 through 12. For the module pcbs, they should be inverted, since the cable will automatically invert the order when connected.
+The order specified above is the order they should be used on the FPC connector on the **keyboard side**, pins 1 through 12. For the module pcbs, they should be inverted, since the cable will automatically invert the order when connected. If you use the VIK Kicad symbols and footprints, this is managed for you. See the [Implementation with Kicad](#implementation-with-Kicad) section below
 
 Here is an example schematic for the keyboard FPC connector:
 
@@ -78,9 +78,50 @@ Here is an example schematic for the module FPC connector:
 
 So long as you adhere to the specs above, you can consider your keyboard pcb or module VIK enabled. The last thing you do before publishing or manufacturing your PCB is to include the VIK logo.
 
-There are a collection of logos you can use in the root directory of this repository, all prefixed with `vik-logo`. For instance, you could take the pre-made kicad footprints and include them on your pcb. If you aren't using kicad, there is a dxf and svg you can use as well.
+There are a collection of logos you can use in the kicad/vik.pretty directory of this repository, all prefixed with `vik-logo`. For instance, you could take the pre-made kicad footprints and include them on your pcb. If you aren't using kicad, there is a dxf and svg you can use as well.
 
 ![vik logo example](images/vik-logo-example.png)
+
+## Implementation with Kicad
+
+Given Kicad's popularity, I've made it (hopefully) very convenient to implement VIK on the keyboard and module side.
+
+### Add symbols and footprints to your Kicad project
+
+1. Clone this repository to your local machine
+2. Add the VIK symbol library your project
+3. Add the VIK footprint library to your project
+
+Please note that the path in the screenshots won't be the same as yours. It should be:  
+`{PATH TO CLONE OF THIS REPO}/kicad/vik.kicad_sym`  
+and  
+`{PATH TO CLONE OF THIS REPO}/kicad/vik.pretty`  
+
+![vik-kicad-symbol-library](images/vik-kicad-symbol-library.png)
+
+![vik-kicad-footprint-library](images/vik-kicad-footprint-library.png)
+
+### Kicad keyboard connector
+
+1. Add a new symbol in the schematic, and select the `vik-keyboard-connector`
+2. Connect all the signals as specified
+3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint)
+4. Update your PCB from the schematic and wire it up!
+
+![vik-add-connector-symbol-keyboard](images/vik-add-connector-symbol-keyboard.png)
+
+![vik-add-connector-footprint](images/vik-add-connector-footprint.png)
+
+### Kicad module connector
+
+1. Add a new symbol in the schematic, and select the `vik-keyboard-module`
+2. Connect all the signals as specified
+3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint)
+4. Update your PCB from the schematic and wire it up!
+
+![vik-add-connector-symbol-module](images/vik-add-connector-symbol-module.png)
+
+![vik-add-connector-footprint](images/vik-add-connector-footprint.png)
 
 ## Design guidelines and recommendations
 

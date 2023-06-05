@@ -1,5 +1,6 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
 "D43, D44, D45, D46",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-reversible,4,WS2812B,C2761795
 "H1, H2, H3, H4",MountingHole_2.2mm_M2_Pad,4,MountingHole,
-"J1, J2",FPC-SMD_FPC05012-09200-.5mm-rev,2,Conn_01x12_Female,C479750
+J1,vik-connector-horizontal,1,~,C479750
+J2,FPC-SMD_FPC05012-09200-.5mm-rev,1,Conn_01x12_Female,C479750
 SW1,PERS56v3,1,RotaryEncoder,
