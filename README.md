@@ -12,6 +12,16 @@ The standard specifies only a couple of things:
 3. The type of cable
 4. Inclusion of the VIK logo on the PCB
 
+## Renders
+
+Keyboard with VIK certification using the keyboard footprint
+
+![vik-out-keyboard-pcb-render](images/vik-out-keyboard-pcb-render.png)
+
+Module with VIK certification using the module footprint
+
+![vik-in-module-pcb-render](images/vik-in-module-pcb-render.png)
+
 ### What value does this bring?
 
 #### Consoldiates efforts for feature design
