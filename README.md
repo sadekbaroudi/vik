@@ -1,6 +1,7 @@
 # VIK
 
-**IMPORTANT: This is still undergoing testing. Until this comment is removed, I don't recommend using anything in the repo without consulting me**
+> **Warning**  
+> This is still undergoing testing. Until this comment is removed, I don't recommend using anything in the repo without consulting me
 
 ## Overview
 
@@ -11,6 +12,9 @@ The standard specifies only a couple of things:
 2. The signals mapped to each pin on the connector
 3. The type of cable
 4. Inclusion of the VIK logo on the PCB
+
+> **Note**  
+> If you want to jump straight to the guide to support VIK using Kicad, go to [Implementation with Kicad](#implementation-with-Kicad) 
 
 ## Renders
 
@@ -76,14 +80,6 @@ The interface includes the following signals:
 
 The order specified above is the order they should be used on the FPC connector on the **keyboard side**, pins 1 through 12. For the module pcbs, they should be inverted, since the cable will automatically invert the order when connected. If you use the VIK Kicad symbols and footprints, this is managed for you. See the [Implementation with Kicad](#implementation-with-Kicad) section below
 
-Here is an example schematic for the keyboard FPC connector:
-
-![vik fpc keyboard](images/vik-interface-keyboard-side.png)
-
-Here is an example schematic for the module FPC connector:
-
-![vik fpc module](images/vik-interface-module-side.png)
-
 ### VIK logo
 
 So long as you adhere to the specs above, you can consider your keyboard pcb or module VIK enabled. The last thing you do before publishing or manufacturing your PCB is to include the VIK logo.
@@ -118,20 +114,44 @@ and
 3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint). Given you are making a keyboard connector, be sure to use the ones that have the word keyboard in them. See the image below for an example.
 4. Update your PCB from the schematic and wire it up!
 
+#### Adding the keyboard connector symbol
+
 ![vik-add-connector-symbol-keyboard](images/vik-add-connector-symbol-keyboard.png)
+
+#### Assigning the keyboard connector footprint
 
 ![vik-connector-footprint-selection-keyboard](images/vik-connector-footprint-selection-keyboard.png)
 
+#### Example schematic for keyboard connector
+
+![vik fpc keyboard](images/vik-interface-keyboard-side.png)
+
+#### Example wiring for keyboard connector
+
+![vik-connector-wiring-keyboard](images/vik-connector-wiring-keyboard.png)
+
 ### Kicad module connector
 
-1. Add a new symbol in the schematic, and select the `vik-keyboard-module`
+1. Add a new symbol in the schematic, and select the `vik-module-connector`
 2. Connect all the signals as specified
 3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint). Given you are making a module connector, be sure to use the ones that have the word module in them. See the image below for an example.
 4. Update your PCB from the schematic and wire it up!
 
+#### Adding the module connector symbol
+
 ![vik-add-connector-symbol-module](images/vik-add-connector-symbol-module.png)
 
+#### Assigning the module connector footprint
+
 ![vik-connector-footprint-selection-](images/vik-connector-footprint-selection-module.png)
+
+#### Example schematic for module connector
+
+![vik fpc module](images/vik-interface-module-side.png)
+
+#### Example wiring for module connector
+
+![vik-connector-wiring-module](images/vik-connector-wiring-module.png)
 
 ## Design guidelines and recommendations
 
