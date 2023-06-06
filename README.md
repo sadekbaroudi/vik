@@ -105,23 +105,23 @@ and
 
 1. Add a new symbol in the schematic, and select the `vik-keyboard-connector`
 2. Connect all the signals as specified
-3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint)
+3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint). Given you are making a keyboard connector, be sure to use the ones that have the word keyboard in them. See the image below for an example.
 4. Update your PCB from the schematic and wire it up!
 
 ![vik-add-connector-symbol-keyboard](images/vik-add-connector-symbol-keyboard.png)
 
-![vik-add-connector-footprint](images/vik-add-connector-footprint.png)
+![vik-connector-footprint-selection-keyboard](images/vik-connector-footprint-selection-keyboard.png)
 
 ### Kicad module connector
 
 1. Add a new symbol in the schematic, and select the `vik-keyboard-module`
 2. Connect all the signals as specified
-3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint)
+3. Associate with the type of footprint you'd like to use (all of the VIK examples use the horizontal connector footprint). Given you are making a module connector, be sure to use the ones that have the word module in them. See the image below for an example.
 4. Update your PCB from the schematic and wire it up!
 
 ![vik-add-connector-symbol-module](images/vik-add-connector-symbol-module.png)
 
-![vik-add-connector-footprint](images/vik-add-connector-footprint.png)
+![vik-connector-footprint-selection-](images/vik-connector-footprint-selection-module.png)
 
 ## Design guidelines and recommendations
 

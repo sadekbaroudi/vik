@@ -4,7 +4,7 @@ C3,1206,1,4.7uF, C29823
 "D43, D44, D45, D46",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-reversible,4,WS2812B,C2761795
 "H1, H2, H3, H4",MountingHole_2.2mm_M2_Pad,4,MountingHole,
 IC1,AP7331,1,AP7335-WG-7,C460382
-J1,vik-connector-horizontal,1,~,C479750
+J1,vik-module-connector-horizontal,1,~,C479750
 "R1, R4",1206,2,10k,C328409
 R2,1206,1,39,C153384
 R3,1206,1,15k,C351534

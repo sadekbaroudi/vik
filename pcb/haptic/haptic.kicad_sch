@@ -1101,7 +1101,7 @@
     (property "Value" "~" (at 81.28 78.74 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "vik:vik-connector-horizontal" (at 81.28 78.74 0)
+    (property "Footprint" "vik:vik-module-connector-horizontal" (at 81.28 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 81.28 78.74 0)
