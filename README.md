@@ -153,6 +153,91 @@ and
 
 ![vik-connector-wiring-module](images/vik-connector-wiring-module.png)
 
+## Schematic design guide
+
+Assuming you already have the VIK symbols and footprints included in your schematic, you will need to wire them according to the specs. Let's walk through each signal, and review how to wire. I'll break this into two parts, one for the keyboard design, and one for the module design.
+
+### Keyboard schematic guide
+
+First and foremost, it's very important that the keyboard have everything set up correctly. Given it's the one supplying the signals to the module, you want to be fully compatible with as many modules as possible.
+
+Here is each signal, and an overview of how to wire it.
+
+**3.3V**
+
+This one is fairly straight forward in the sense that you just need to supply 3.3v. That said, there are controllers out there that do not include it natively. Please review the [Microcontroller selection](#Microcontroller-selection) section below for details.
+
+**GND**
+
+Connect ground to this pin.
+
+**SDA**
+
+Microcontrollers usually have more than one set of I2C signals. On dev boards like the [Helios](https://github.com/0xCB-dev/0xCB-Helios) or [Elite-Pi](https://docs.keeb.io/elite-pi-guide), it's as simple as wiring the SDA pin to the corresponding SDA pin on the VIK connector.
+
+**SCL**
+
+This is the exact same as described for SDA, but using SCL instead
+
+
+**RGB Data Out**
+
+If you don't have RGB leds on your keyboard, this can be any digital GPIO. Just pick any data signal, and route it to the RGB pin on the VIK connector.
+
+If you are using RGB leds, you'll want to do two things:
+1. Wire the data out from the last LED to the RGB pin on the VIK connector
+2. Connect from the controller LED data pin to the VIK connector, but put an open jumper in the middle. The nice thing about this is that it allows the end user to still use the LED feature on a module without necessarily having the LEDs assembled on their keyboard.
+
+![vik-rgb-data-out-mcu-led](images/vik-rgb-data-out-mcu-led.png)
+![vik-rgb-data-out-schematic](images/vik-rgb-data-out-schematic.png)
+![vik-rgb-data-out-connector](images/vik-rgb-data-out-connector.png)
+
+**5V**
+
+Connect 5V to the VIK connector. Be careful not to use VCC on an RP2040 controller, as that is 3.3V. Instead, you can take the RAW output from a controller. On all controllers that I'm aware of as of this writing, it's the top right pin (please double check this before you wire it up).
+
+For example, on the elite-pi:
+![vik-elite-pi-raw-pin](images/vik-elite-pi-raw-pin.png)
+
+**GND**
+
+There are two ground lines on the connector. This is the same comment as the previous one.
+
+**MOSI**
+
+Similar to I2C, SPI has predefined locations on most controllers. If doing an integrated controller, please refer to the datasheet to determine the correct pins.
+
+That said, on dev controllers like the [Helios](https://github.com/0xCB-dev/0xCB-Helios) or [Elite-Pi](https://docs.keeb.io/elite-pi-guide), they are standard locations. See the image below. You can wire the 4 SPI pins as shown.
+
+![vik-spi-mcu](images/vik-spi-mcu.png)
+
+**Digital/Analog GPIO**
+
+Similar to the RGB Data Out, you can select any pin, but it should support both digital and analog. Below is an example of the Elite-Pi, highlighting its pins that support both.
+
+![vik-analog-and-digitial-pins](images/vik-analog-and-digitial-pins.png)
+
+**SPI CS**
+
+No additional info beyond the `MOSI` section above. Same course of action, but for the SPI CS signal.
+
+**MISO**
+
+No additional info beyond the `MOSI` section above. Same course of action, but for the MISO signal.
+
+**SCLK**
+
+No additional info beyond the `MOSI` section above. Same course of action, but for the SCLK signal.
+
+
+### Module schematic guide
+
+There aren't any major considerations for the schematic for the module. Everything on the connector is an input, so you can choose what to do with them.
+
+That said, please note that using the I2C or SPI pins for anything **other than I2C or SPI** will break on keyboards that use those signals on the main board. So, please avoid doing so if you care about maximizing compatibility.
+
+For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. This means that your module will not work with a fair number of keyboards, since many use I2C. Your module can be certified even if you break this policy, but it will be indicated as such on the [module certification card](#VIK-Module-certification-card).
+
 ## Design guidelines and recommendations
 
 ### Reference designs
@@ -170,8 +255,6 @@ As mentioned above, the responsibility of using pull up resistors is on the VIK 
 #### Module pcb
 
 When designing a module, please ensure that you include pull up resistors, since the guidelines state that the keyboard pcb is not responsible for it.
-
-It may be tempting to use the I2C gpio for purposes other than I2C. For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. If you decide to do this, the [VIK certification](#VIK-certification) card will be flagged as a failure. While this is acceptable, it means that your module will not work with a fair number of keyboards, since many use I2C.
 
 ### Microcontroller selection
 
@@ -194,27 +277,27 @@ In order to be VIK certified, you should be compliant with everything above, and
 
 * **FPC connector:** has the correct FPC connector with the right pinout, and is wired to specificaton. See the connectors in the kicad/vik.pretty directory
 * **Breakout pins:** includes breakout pins using the [VIK breakout pin footprint](https://github.com/sadekbaroudi/vik/blob/master/kicad/vik.pretty/vik-keyboard-throughole.kicad_mod), or has through holes for all the signals. This allows easy access to all the signals. Also, the footprint is compatible with a [hand solderable FPC breakout board](https://www.amazon.com/uxcell-Converter-Couple-Extend-Adapter/dp/B07RVD1J1K).
-* **Supplies: SPI** supplies SPI
-* **Supplies: I2C:** supplies I2C
-* **I2C on main PCB:** Does the main PCB use any I2C already. If this is true, the next field must have a value
+* **Supplies: SPI** supplies SPI signals, including MISO, MOSI, SCLK, and CS
+* **Supplies: I2C:** supplies I2C, including SDA and SCL
+* **I2C on main PCB:** Does the main PCB use any I2C already. Valid responses are `yes` or `no`. If this is true, the `I2C pull ups` field must have a value
 * **I2C pull ups:** I2C pull up resistor value, :x: if no pull ups on the main pcb, or resistor value if present
 * **Supplies: RGB:** supplies RGB data out
-* **Supplies: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Digital Only | Analog/Digital**)
+* **Supplies: Extra GPIO:** supplies the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
 
 #### Keyboard sample cards
 
-General example:
+Example of a failing card:
 
 | Category                 | Classification          | Response           |
 | -----------------------  | ----------------------- | ------------------ |
 | FPC connector            | Required                | :heavy_check_mark: |
 | Breakout pins            | Recommended             | :x:                |
-| Supplies: SPI            | Strongly recommended    | :heavy_check_mark: |
-| Supplies: I2C            | Strongly recommended    | :heavy_check_mark: |
-| I2C on main PCB          | Discouraged             | :heavy_check_mark: |
+| Supplies: SPI            | Required                | :heavy_check_mark: |
+| Supplies: I2C            | Required                | :heavy_check_mark: |
+| I2C on main PCB          | Discouraged             | yes                |
 | I2C pull ups             | Informative             | 2.2kΩ              |
-| Supplies: RGB            | Strongly recommended    | :x:                |
-| Supplies: Extra GPIO     | Strongly recommended    | No                 |
+| Supplies: RGB            | Required                | :x:                |
+| Supplies: Extra GPIO     | Required                | :x:                |
 
 A "perfect" keyboard card would look like this:
 
@@ -224,10 +307,10 @@ A "perfect" keyboard card would look like this:
 | Breakout pins            | Recommended             | :heavy_check_mark: |
 | Supplies: SPI            | Strongly recommended    | :heavy_check_mark: |
 | Supplies: I2C            | Strongly recommended    | :heavy_check_mark: |
-| I2C on main PCB          | Discouraged             | :x:                |
+| I2C on main PCB          | Discouraged             | no                 |
 | I2C pull ups             | Informative             | N/A                |
 | Supplies: RGB            | Strongly recommended    | :heavy_check_mark: |
-| Supplies: Extra GPIO     | Strongly recommended    | :heavy_check_mark: |
+| Supplies: Extra GPIO     | Strongly recommended    | Analog/Digital     |
 
 ### VIK module certification card
 
@@ -239,9 +322,9 @@ A "perfect" keyboard card would look like this:
 * **SPI used for SPI only:** if you are using any of the SPI gpio for any purpose other than SPI, this will remain unchecked. This means that keyboard pcbs that use SPI will be incompatible with this module.
 * **Uses: I2C:**
 * **I2C used for I2C only:** if you are using any of the I2C gpio for any purpose other than I2C, this will remain unchecked. This means that keyboard pcbs that use I2C will be incompatible with this module.
-* **I2C pull ups:** I2C pull up resistor value
+* **I2C pull ups:** I2C pull up resistor value, if applicable. These are only required if I2C is being used on the module.
 * **Uses: RGB:** uses RGB data out
-* **Uses: Extra GPIO:** uses the extra GPIO, response will be one of: (**No | Analog | Digital**), along with what it's used for.
+* **Uses: Extra GPIO:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
 
 #### Module sample card
 
@@ -257,7 +340,7 @@ General example:
 | I2C used for I2C only   | Strongly Recommended    | :heavy_check_mark: |
 | I2C pull ups            | Required                | 4.7kΩ              |
 | Uses: RGB               | Optional                | :x:                |
-| Uses: Extra GPIO        | Optional                | No                 |
+| Uses: Extra GPIO        | Optional                | :x:                |
 
 ## Known list of VIK certifications
 
