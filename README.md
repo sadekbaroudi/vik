@@ -14,7 +14,7 @@ The standard specifies only a couple of things:
 4. Inclusion of the VIK logo on the PCB
 
 > **Note**  
-> If you want to jump straight to the guide to support VIK using Kicad, go to [Implementation with Kicad](#implementation-with-Kicad) 
+> Adding support for VIK is as simple as adding a symbol and footprint, provided in this repository, followed by some basic wiring. If you want to jump straight to the guide to do this using Kicad, go to [Implementation with Kicad](#implementation-with-Kicad) 
 
 ## Renders
 
