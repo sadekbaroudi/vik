@@ -57,7 +57,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
     (tstamp df40c44f-6991-4248-9d0f-fd6df1f41818)
   )
-  (fp_text user "VIK" (at -7 1.1 90 unlocked) (layer "F.SilkS" knockout)
+  (fp_text user "VIK OUT" (at -7.02 2.99 90 unlocked) (layer "F.SilkS" knockout)
       (effects (font (size 1 1) (thickness 0.15)) (justify left bottom))
     (tstamp f5c52d25-13ac-4f45-b650-8a223554b140)
   )
