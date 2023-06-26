@@ -4,8 +4,9 @@
 | Breakout pins           | Recommended             | :x:                |
 | Uses: SPI               | Optional                | :heavy_check_mark: |
 | SPI used for SPI only   | Strongly recommended    | :heavy_check_mark: |
-| Uses: I2C               | Optional                | :heavy_check_mark: |
-| I2C used for I2C only   | Strongly Recommended    | :x:                |
+| Uses: I2C               | Optional                | :x:                |
+| I2C used for I2C only   | Strongly Recommended    | N/A                |
 | I2C pull ups            | Required                | N/A                |
 | Uses: RGB               | Optional                | :heavy_check_mark: |
-| Uses: Extra GPIO        | Optional                | :x:                |
+| Uses: Extra GPIO 1      | Optional                | :heavy_check_mark: |
+| Uses: Extra GPIO 2      | Optional                | :heavy_check_mark: |

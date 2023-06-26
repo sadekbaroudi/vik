@@ -71,9 +71,9 @@ The interface includes the following signals:
 * SCL
 * RGB Data Out
 * 5V
-* GND
+* Digital/Analog GPIO 1
 * MOSI
-* Digital/Analog GPIO
+* Digital/Analog GPIO 2
 * SPI CS
 * MISO
 * SCLK
@@ -199,9 +199,11 @@ Connect 5V to the VIK connector. Be careful not to use VCC on an RP2040 controll
 For example, on the elite-pi:
 ![vik-elite-pi-raw-pin](images/vik-elite-pi-raw-pin.png)
 
-**GND**
+**Digital/Analog GPIO 1**
 
-There are two ground lines on the connector. This is the same comment as the previous one.
+Similar to the RGB Data Out, you can select any pin, but it should support both digital and analog. Below is an example of the Elite-Pi, highlighting its pins that support both.
+
+![vik-analog-and-digitial-pins](images/vik-analog-and-digitial-pins.png)
 
 **MOSI**
 
@@ -211,11 +213,9 @@ That said, on dev controllers like the [Helios](https://github.com/0xCB-dev/0xCB
 
 ![vik-spi-mcu](images/vik-spi-mcu.png)
 
-**Digital/Analog GPIO**
+**Digital/Analog GPIO 2**
 
-Similar to the RGB Data Out, you can select any pin, but it should support both digital and analog. Below is an example of the Elite-Pi, highlighting its pins that support both.
-
-![vik-analog-and-digitial-pins](images/vik-analog-and-digitial-pins.png)
+Same as `Digital/Analog GPIO 1`, but this should be a second independent GPIO of the same specifications.
 
 **SPI CS**
 
@@ -235,8 +235,6 @@ No additional info beyond the `MOSI` section above. Same course of action, but f
 There aren't any major considerations for the schematic for the module. Everything on the connector is an input, so you can choose what to do with them.
 
 That said, please note that using the I2C or SPI pins for anything **other than I2C or SPI** will break on keyboards that use those signals on the main board. So, please avoid doing so if you care about maximizing compatibility.
-
-For example, in the pers60 scroll wheel modules included in this repository, SDA and SCL are used for the scroll wheel encoder. This means that your module will not work with a fair number of keyboards, since many use I2C. Your module can be certified even if you break this policy, but it will be indicated as such on the [module certification card](#VIK-Module-certification-card).
 
 ## Design guidelines and recommendations
 
@@ -282,7 +280,8 @@ In order to be VIK certified, you should be compliant with everything above, and
 * **I2C on main PCB:** Does the main PCB use any I2C already. Valid responses are `yes` or `no`. If this is true, the `I2C pull ups` field must have a value
 * **I2C pull ups:** I2C pull up resistor value, :x: if no pull ups on the main pcb, or resistor value if present
 * **Supplies: RGB:** supplies RGB data out
-* **Supplies: Extra GPIO:** supplies the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
+* **Supplies: Extra GPIO 1:** supplies the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
+* **Supplies: Extra GPIO 2:** supplies the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
 
 #### Keyboard sample cards
 
@@ -297,7 +296,8 @@ Example of a failing card:
 | I2C on main PCB          | Discouraged             | yes                |
 | I2C pull ups             | Informative             | 2.2kΩ              |
 | Supplies: RGB            | Required                | :x:                |
-| Supplies: Extra GPIO     | Required                | :x:                |
+| Supplies: Extra GPIO 1   | Required                | :x:                |
+| Supplies: Extra GPIO 2   | Required                | :x:                |
 
 A "perfect" keyboard card would look like this:
 
@@ -310,7 +310,8 @@ A "perfect" keyboard card would look like this:
 | I2C on main PCB          | Discouraged             | no                 |
 | I2C pull ups             | Informative             | N/A                |
 | Supplies: RGB            | Strongly recommended    | :heavy_check_mark: |
-| Supplies: Extra GPIO     | Strongly recommended    | Analog/Digital     |
+| Supplies: Extra GPIO 1   | Required                | Analog/Digital     |
+| Supplies: Extra GPIO 2   | Required                | Analog/Digital     |
 
 ### VIK module certification card
 
@@ -324,7 +325,8 @@ A "perfect" keyboard card would look like this:
 * **I2C used for I2C only:** if you are using any of the I2C gpio for any purpose other than I2C, this will remain unchecked. This means that keyboard pcbs that use I2C will be incompatible with this module.
 * **I2C pull ups:** I2C pull up resistor value, if applicable. These are only required if I2C is being used on the module.
 * **Uses: RGB:** uses RGB data out
-* **Uses: Extra GPIO:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
+* **Uses: Extra GPIO 1:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
+* **Uses: Extra GPIO 2:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
 
 #### Module sample card
 
@@ -340,7 +342,8 @@ General example:
 | I2C used for I2C only   | Strongly Recommended    | :heavy_check_mark: |
 | I2C pull ups            | Required                | 4.7kΩ              |
 | Uses: RGB               | Optional                | :x:                |
-| Uses: Extra GPIO        | Optional                | :x:                |
+| Uses: Extra GPIO 1      | Optional                | :x:                |
+| Uses: Extra GPIO 2      | Optional                | :x:                |
 
 ## Known list of VIK certifications
 

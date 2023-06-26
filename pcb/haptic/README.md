@@ -8,4 +8,5 @@
 | I2C used for I2C only   | Strongly Recommended    | :heavy_check_mark: |
 | I2C pull ups            | Required                | 4.7kΩ              |
 | Uses: RGB               | Optional                | :x:                |
-| Uses: Extra GPIO        | Optional                | :x:                |
+| Uses: Extra GPIO 1      | Optional                | :x:                |
+| Uses: Extra GPIO 2      | Optional                | :x:                |
