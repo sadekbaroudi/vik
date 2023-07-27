@@ -354,7 +354,7 @@ General example:
 ### Modules
 
 * [haptic](https://github.com/sadekbaroudi/vik/tree/master/pcb/haptic)
-* [pers60-cirque-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/pers60-cirque-leds)
-* [pers60-pmw3360-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/pers60-pmw3360-leds)
+* [per56-cirque-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-cirque-leds)
+* [per56-pmw3360-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-pmw3360-leds)
 * [pmw3360](https://github.com/sadekbaroudi/vik/tree/master/pcb/pmw3360)
 * [ssd1351](https://github.com/Ariamelon/Crenshaw) - Crenshaw by Ariamelon
