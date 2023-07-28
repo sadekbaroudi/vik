@@ -4,7 +4,7 @@
 > This is still undergoing testing. Until this comment is removed, I don't recommend using anything in the repo without consulting me
 
 > **Note**  
-> Please be aware that for keyboard pcbs, VIK assumes that it's running at 3.3v logic levels. This is easily achieved by using a RP2040. If you are using a 5v controller, it is the keyboard's responsibility to level shift before going to the VIK module.
+> Please be aware that for keyboard pcbs, VIK assumes that it's running at 3.3v logic levels. This is easily achieved by using a RP2040. If you are using a 5v controller, it is the keyboard's responsibility to level shift before going to the VIK module. See the [Microcontroller selection](#microcontroller-selection) section below
 
 ## Overview
 
@@ -18,6 +18,10 @@ The standard specifies only a couple of things:
 
 > **Note**  
 > Adding support for VIK is as simple as adding a symbol and footprint, provided in this repository, followed by some basic wiring. If you want to jump straight to the guide to do this using Kicad, go to [Implementation with Kicad](#implementation-with-kicad) 
+
+> **Note**  
+> **To see the list of known supported keyboards and modules, go to [this section](#known-list-of-vik-certifications) at the bottom of the readme**
+
 
 ## Renders
 
@@ -385,11 +389,13 @@ General example:
 ### Keyboards
 
 * [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora)
+* [stront](https://github.com/zzeneg/stront) - by zzeneg (partial support, see stront README for details)
 
 ### Modules
 
 * [haptic](https://github.com/sadekbaroudi/vik/tree/master/pcb/haptic)
 * [per56-cirque-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-cirque-leds)
 * [per56-pmw3360-leds](https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-pmw3360-leds)
+* [per56-pmw3360-cirque-leds](https://github.com/Ariamelon/Kiwano) - Kiwano by Ariamelon
 * [pmw3360](https://github.com/sadekbaroudi/vik/tree/master/pcb/pmw3360)
 * [ssd1351](https://github.com/Ariamelon/Crenshaw) - Crenshaw by Ariamelon
