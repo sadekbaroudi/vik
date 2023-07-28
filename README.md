@@ -3,6 +3,9 @@
 > **Warning**  
 > This is still undergoing testing. Until this comment is removed, I don't recommend using anything in the repo without consulting me
 
+> **Note**  
+> Please be aware that for keyboard pcbs, VIK assumes that it's running at 3.3v logic levels. This is easily achieved by using a RP2040. If you are using a 5v controller, it is the keyboard's responsibility to level shift before going to the VIK module.
+
 ## Overview
 
 VIK is a standard for a data interface between printed circuit boards. It is intended to provide modularity between a mechanical keyboard pcb and additional features. The main pcb can have a controller and a switch matrix, while the modules can provide additional features.
@@ -14,7 +17,7 @@ The standard specifies only a couple of things:
 4. Inclusion of the VIK logo on the PCB
 
 > **Note**  
-> Adding support for VIK is as simple as adding a symbol and footprint, provided in this repository, followed by some basic wiring. If you want to jump straight to the guide to do this using Kicad, go to [Implementation with Kicad](#implementation-with-Kicad) 
+> Adding support for VIK is as simple as adding a symbol and footprint, provided in this repository, followed by some basic wiring. If you want to jump straight to the guide to do this using Kicad, go to [Implementation with Kicad](#implementation-with-kicad) 
 
 ## Renders
 
@@ -87,6 +90,34 @@ So long as you adhere to the specs above, you can consider your keyboard pcb or 
 There are a collection of logos you can use in the kicad/vik.pretty directory of this repository, all prefixed with `vik-logo`. For instance, you could take the pre-made kicad footprints and include them on your pcb. If you aren't using kicad, there is a dxf and svg you can use as well.
 
 ![vik logo example](images/vik-logo-example.png)
+
+## Module PCB shape and mounting
+
+This is optional, but highly recommended. By adhereing to a standard size and mounting, this will allow others to design keyboard pcbs and/or cases that will support mounting a variety of modules.
+
+There are two specs, a small and large pcb.
+
+**All mounting holes should fit M2 screws**
+
+### Small PCB
+
+![vik-kicad-symbol-library](images/vik-module-pcb-dimensions-small.png)
+
+Size: less than 25mm by 42mm
+
+Mounting: 2 mounting holes
+
+The center of the mounting holes should be 2.1mm from the long edge (42mm), and in the center of the short edge (12.5mm assuming the width is 25mm)
+
+### Large PCB
+
+![vik-kicad-symbol-library](images/vik-module-pcb-dimensions-large.png)
+
+Size: less than 65mm by 65mm
+
+Mounting: 4 mounting holes
+
+The mounting holes should 44.5mm apart in a square, centered around the center of the pcb. Alternatively, you can place these mounting holes evenly distributed around a 63mm circle, also centered around the center of the pcb.
 
 ## Implementation with Kicad
 
@@ -248,7 +279,7 @@ For the module side, please see the pcb directory in this repository. Each subdi
 
 #### Keyboard pcb
 
-As mentioned above, the responsibility of using pull up resistors is on the VIK modules. This may cause challenges for a few reasons. You may want (or need) to use I2C on the main keyboard PCB, which means you need to use pull up resistors. If this is the case, please provide instructions to inform the users that when using VIK modules, they will need to remove the pull up resistors.
+As mentioned above, the responsibility of using pull up resistors is on the VIK modules. This may cause challenges for a few reasons. You may want (or need) to use I2C on the main keyboard PCB, which means you need to use pull up resistors. If this is the case, please provide instructions to inform the users that when using VIK modules, they will need to remove (or not place) the pull up resistor on the keyboard.
 
 #### Module pcb
 
@@ -258,10 +289,12 @@ When designing a module, please ensure that you include pull up resistors, since
 
 If you are designing a keyboard pcb that uses a dev board as a controller (e.g. pro micro, elite-c, stemcell, etc), you should consider that the VIK specs calls for 3.3V and 5V. Given these controllers operate on 5V and don't provide 3.3V, you won't be able to use them for VIK compatibility without additonal circuitry to convert 5V to 3.3V.
 
+**As described at the top of the README in the note, the keyboard pcb should run at at 3.3v logic levels. The simplest option is to use a RP2040 based development board. For integrated controllers, either use a controller that already runs at 3.3v logic, or level shift the GPIO before going into the VIK connector.**
+
 Some options include:
 1. Support only RP2040 based controllers (e.g. splinky, elite-pi, helios), where VCC is 3.3V, and the RAW pin provides 5V
-2. Support other 5V controllers, and use something like an LDO to convert 5V to 3.3V for the VIK 3.3V signal
-3. Anything you want, as long as you can provide 5V and 3.3V
+2. Support other 5V controllers, and use something like an LDO to convert 5V to 3.3V for the VIK 3.3V signal and GPIO signals
+3. Anything you want, as long as you can provide 5V and 3.3V (both power and 3.3v gpio logic levels)
 
 The vulpes minora is an example of point number 1 above.
 
@@ -327,6 +360,7 @@ A "perfect" keyboard card would look like this:
 * **Uses: RGB:** uses RGB data out
 * **Uses: Extra GPIO 1:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
 * **Uses: Extra GPIO 2:** uses the extra GPIO, response will be one of: (**:x: | Digital Only | Analog/Digital**)
+* **Standard PCB Size/Mount:** adheres to standard module size and mounts, responses will be one of: (**:x: | Small | Large**)
 
 #### Module sample card
 
@@ -344,6 +378,7 @@ General example:
 | Uses: RGB               | Optional                | :x:                |
 | Uses: Extra GPIO 1      | Optional                | :x:                |
 | Uses: Extra GPIO 2      | Optional                | :x:                |
+| Standard PCB Size/Mount | Strongly recommended    | Large              |
 
 ## Known list of VIK certifications
 

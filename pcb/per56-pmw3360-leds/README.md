@@ -10,3 +10,4 @@
 | Uses: RGB               | Optional                | :heavy_check_mark: |
 | Uses: Extra GPIO 1      | Optional                | :heavy_check_mark: |
 | Uses: Extra GPIO 2      | Optional                | :heavy_check_mark: |
+| Standard PCB Size/Mount | Strongly recommended    | Large              |

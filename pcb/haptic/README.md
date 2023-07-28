@@ -10,3 +10,4 @@
 | Uses: RGB               | Optional                | :x:                |
 | Uses: Extra GPIO 1      | Optional                | :x:                |
 | Uses: Extra GPIO 2      | Optional                | :x:                |
+| Standard PCB Size/Mount | Strongly recommended    | :x:                |
