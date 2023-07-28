@@ -1,7 +1,7 @@
 # VIK
 
 > **Warning**  
-> This is still undergoing testing. Until this comment is removed, I don't recommend using anything in the repo without consulting me
+> This is a work in progress. It has been tested to be functional, but please consult **sadekbaroudi** in the **#vik** channel of the [fingerpunch discord server](https://fingerpunch.xyz/discord) if you'd like to design a keyboard or module.
 
 > **Note**  
 > **To see the list of known supported keyboards and modules, go to [this section](#known-list-of-vik-certifications) at the bottom of the readme**
