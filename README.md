@@ -13,11 +13,12 @@
 
 VIK is a standard for a data interface between printed circuit boards. It is intended to provide modularity between a mechanical keyboard pcb and additional features. The main pcb can have a controller and a switch matrix, while the modules can provide additional features.
 
-The standard specifies only a couple of things:
+The standard specifies the following:
 1. The type of connector
 2. The signals mapped to each pin on the connector
 3. The type of cable
-4. Inclusion of the VIK logo on the PCB
+4. (optional) The size of the module pcb and mounting hole locations
+5. Inclusion of the VIK logo on the PCB
 
 > **Note**  
 > Adding support for VIK is as simple as adding a symbol and footprint, provided in this repository, followed by some basic wiring. If you want to jump straight to the guide to do this using Kicad, go to [Implementation with Kicad](#implementation-with-kicad) 
