@@ -389,6 +389,7 @@ General example:
 
 * [vulpes minora](http://github.com/sadekbaroudi/vulpes-minora)
 * [stront](https://github.com/zzeneg/stront) - by zzeneg (partial support, see stront README for details)
+* [Honeydew](https://github.com/Ariamelon/Honeydew/) - by Ariamelon
 
 ### Modules
 
