@@ -1,3 +1,22 @@
+# Haptic feedback module
+
+## Overview
+
+This is a VIK module made to house the [Pimoroni DRV2605L](https://shop.pimoroni.com/products/drv2605l-linear-actuator-haptic-breakout?variant=27859486867539) breakout board.
+
+## Fabrication an BOM
+
+For PCB fabrication, you can use the files in the production folder.
+
+* gerbers.zip - the file used to fabricate the pcb
+* bom.csv - used for PCBA. You can also use the part numbers in this file to look up the exact parts as [lcsc.com](https://lcsc.com)
+* positions.csv - used for PCBA
+
+Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com)
+
+
+## VIK module certification
+
 | Category                | Classification          | Response           |
 | ----------------------- | ----------------------- | ------------------ |
 | FPC connector           | Required                | :heavy_check_mark: |
@@ -11,3 +30,9 @@
 | Uses: Extra GPIO 1      | Optional                | :x:                |
 | Uses: Extra GPIO 2      | Optional                | :x:                |
 | Standard PCB Size/Mount | Strongly recommended    | :x:                |
+
+## PCB images
+
+![pcb front](images/haptic-module-front.png)
+
+![pcb back](images/haptic-module-back.png)
