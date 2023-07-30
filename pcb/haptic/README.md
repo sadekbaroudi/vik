@@ -4,7 +4,7 @@
 
 This is a VIK module made to house the [Pimoroni DRV2605L](https://shop.pimoroni.com/products/drv2605l-linear-actuator-haptic-breakout?variant=27859486867539) breakout board.
 
-## Fabrication an BOM
+## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
 

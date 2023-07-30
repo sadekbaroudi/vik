@@ -4,7 +4,7 @@
 
 This is a VIK module designed to mount a [pwm3360](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/pixart/PMW3360DM-T2QU.pdf) optical sensor for a trackball.
 
-## Fabrication an BOM
+## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
 

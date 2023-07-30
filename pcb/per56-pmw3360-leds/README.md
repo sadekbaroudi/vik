@@ -4,7 +4,7 @@
 
 This is a VIK module designed to mount a [PER56 scroll ring](https://www.mouser.com/new/bourns/bourns-per56-incremental-ring-encoders/), with a [pwm3360](https://www.epsglobal.com/Media-Library/EPSGlobal/Products/files/pixart/PMW3360DM-T2QU.pdf) optical sensor for a trackball and optional WS2812B LEDs.
 
-## Fabrication an BOM
+## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
 

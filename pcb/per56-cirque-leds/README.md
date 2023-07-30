@@ -6,7 +6,7 @@ This is a VIK module designed to mount a [PER56 scroll ring](https://www.mouser.
 
 This was used to demonstrate a build for [vulpes minora](https://github.com/sadekbaroudi/vulpes-minora). See the repo for pictures.
 
-## Fabrication an BOM
+## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
 
