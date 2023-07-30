@@ -2,6 +2,7 @@ Designator,Mid X,Mid Y,Rotation,Layer
 C1,181.32,-138.94,0.0,bottom
 C2,167.94,-103.84,180.0,bottom
 C3,165.51,-117.62,90.0,bottom
+H1,174.53,-120.66,0.0,top
 IC1,174.74,-107.78,180.0,bottom
 J1,168.69,-133.81,90.0,bottom
 R1,183.93,-118.54,90.0,bottom

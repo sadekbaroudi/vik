@@ -2,7 +2,7 @@ Designator,Footprint,Quantity,Value,LCSC Part #
 "C1, C2",1206,2,1uF,C1926
 C3,1206,1,4.7uF, C29823
 "D43, D44, D45, D46",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-reversible,4,WS2812B,C2761795
-"H1, H2, H3, H4",MountingHole_2.2mm_M2_Pad,4,MountingHole,
+H1,vik-module-mounting-large,1,MountingHole,
 IC1,AP7331,1,AP7335-WG-7,C460382
 J1,vik-module-connector-horizontal,1,~,C479750
 "R1, R4",1206,2,10k,C328409

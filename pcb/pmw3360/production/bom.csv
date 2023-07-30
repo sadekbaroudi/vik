@@ -1,7 +1,7 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
 "C1, C2",1206,2,1uF,C1926
 C3,1206,1,4.7uF, C29823
-"H1, H2",MountingHole_2.2mm_M2_DIN965_Pad,2,MountingHole,
+H1,vik-module-mounting-small,1,MountingHole,
 IC1,AP7331,1,AP7335-WG-7,C460382
 J1,vik-module-connector-horizontal,1,~,C479750
 "R1, R4",1206,2,10k,C328409

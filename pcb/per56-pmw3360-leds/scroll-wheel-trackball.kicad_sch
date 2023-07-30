@@ -1846,30 +1846,6 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 179.07 182.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 504d674f-9639-432d-8633-cf6c6968a07b)
-    (property "Reference" "H2" (at 181.61 181.9715 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 181.61 184.7466 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad" (at 179.07 182.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 179.07 182.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "scroll-wheel-trackball"
-        (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C_Small") (at 287.655 174.625 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59a95270-b8a8-4146-b446-4d50b2d869a3)
@@ -2060,30 +2036,6 @@
       (project "scroll-wheel-trackball"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
           (reference "#PWR0108") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 179.07 189.865 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 915de838-2993-487a-8f83-62d36ade277e)
-    (property "Reference" "H4" (at 181.61 188.9565 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 181.61 191.7316 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad" (at 179.07 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 179.07 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "scroll-wheel-trackball"
-        (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
-          (reference "H4") (unit 1)
         )
       )
     )
@@ -2351,7 +2303,7 @@
     (property "Value" "MountingHole" (at 157.48 184.7466 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad" (at 154.94 182.88 0)
+    (property "Footprint" "vik:vik-module-mounting-large" (at 154.94 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 154.94 182.88 0)
@@ -2400,30 +2352,6 @@
       (project "scroll-wheel-trackball"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 154.94 189.865 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d4106b81-417c-4dcb-a18c-4ba1e33f0184)
-    (property "Reference" "H3" (at 157.48 188.9565 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 157.48 191.7316 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad" (at 154.94 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 154.94 189.865 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "scroll-wheel-trackball"
-        (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
-          (reference "H3") (unit 1)
         )
       )
     )

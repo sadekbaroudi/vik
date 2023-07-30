@@ -110,8 +110,6 @@ Size: less than 25mm by 42mm
 
 Mounting: 2 mounting holes
 
-The center of the mounting holes should be 2.1mm from the long edge (42mm), and in the center of the short edge (12.5mm assuming the width is 25mm)
-
 ### Large PCB
 
 ![vik-kicad-symbol-library](images/vik-module-pcb-dimensions-large.png)
@@ -121,6 +119,20 @@ Size: less than 65mm by 65mm
 Mounting: 4 mounting holes
 
 The mounting holes should 44.5mm apart in a square, centered around the center of the pcb. Alternatively, you can place these mounting holes evenly distributed around a 63mm circle, also centered around the center of the pcb.
+
+### Module mounting Kicad footprints
+
+There are two mounting footprints, found in the vik.pretty footprints folder:
+* vik-module-mounting-small
+* vik-module-mounting-large
+
+You can use these for one of two purposes:
+1) When creating a module, use the footprint to ensure that your module pcb has the correct mounting locations
+2) When creating a keyboard, use the footprint to position where you'd like to mount a module pcb
+
+You can use the Mounting Hole symbol in the schematic, and associate one of the footprints as shown below:
+
+![vik-module-mounting-selection](images/vik-module-mounting-footprint-selection.png)
 
 ## Implementation with Kicad
 
