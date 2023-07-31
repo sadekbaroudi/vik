@@ -406,7 +406,7 @@ General example:
 | stront                        | [zzeneg](https://github.com/zzeneg/)                                | Partial support (see stront readme) | Open source                  | https://github.com/zzeneg/stront/                                            |
 | Honeydew                      | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Work in progress                    | Open source                  | https://github.com/Ariamelon/Honeydew/                                       |
 | ximi                          | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Commercial                   | https://fingerpunch.xyz/product/ximi/                                        |
-| Benboard                      | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Work in progress                    | Commercial / Open source     | https://ben-labs.co.uk/ and https://github.com/ben-labs-ltd/benboard         |
+| Benboard                      | [Ben](https://github.com/ben-labs-ltd/)                             | Work in progress                    | Commercial / Open source     | https://ben-labs.co.uk/ and https://github.com/ben-labs-ltd/benboard         |
 
 ### Modules
 
