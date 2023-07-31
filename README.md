@@ -400,20 +400,21 @@ General example:
 
 ### Keyboards
 
-| Name                          | Creator                                                             | Open source or Commercial    | Link                                                                         |
-| ----------------------------- | ------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
-| vulpes minora                 | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Open source                  | https://github.com/sadekbaroudi/vulpes-minora/                               |
-| stront                        | [zzeneg](https://github.com/zzeneg/)                                | Open source                  | https://github.com/zzeneg/stront/                                            |
-| Honeydew                      | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Open source                  | https://github.com/Ariamelon/Honeydew/                                       |
-| ximi                          | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Commercial                   | https://fingerpunch.xyz/product/ximi/                                        |
+| Name                          | Creator                                                             | Status                              | Open source or Commercial    | Link                                                                         |
+| ----------------------------- | ------------------------------------------------------------------- | ----------------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
+| vulpes minora                 | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Open source                  | https://github.com/sadekbaroudi/vulpes-minora/                               |
+| stront                        | [zzeneg](https://github.com/zzeneg/)                                | Partial support (see stront readme) | Open source                  | https://github.com/zzeneg/stront/                                            |
+| Honeydew                      | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Work in progress                    | Open source                  | https://github.com/Ariamelon/Honeydew/                                       |
+| ximi                          | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Commercial                   | https://fingerpunch.xyz/product/ximi/                                        |
+| Benboard                      | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Work in progress                    | Commercial / Open source     | https://ben-labs.co.uk/ and https://github.com/ben-labs-ltd/benboard         |
 
 ### Modules
 
-| Name                                 | Creator                                                             | Open source or Commercial    | Link                                                                         |
-| ------------------------------------ | ------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
-| haptic                               | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/haptic/                  |
-| per56-cirque-leds                    | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-cirque-leds/       |
-| per56-pmw3360-leds                   | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-pmw3360-leds/      |
-| per56-pmw3360-cirque-leds (Kiwano)   | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Open source                  | https://github.com/Ariamelon/Kiwano/                                         |
-| pmw3360                              | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/pmw3360/                 |
-| ssd1351 (Crenshaw)                   | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Open source                  | https://github.com/Ariamelon/Crenshaw/                                       |
+| Name                                 | Creator                                                             | Status                              | Open source or Commercial    | Link                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------- | ----------------------------------- | ---------------------------- | ---------------------------------------------------------------------------- |
+| haptic                               | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/haptic/                  |
+| per56-cirque-leds                    | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-cirque-leds/       |
+| per56-pmw3360-leds                   | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/per56-pmw3360-leds/      |
+| per56-pmw3360-cirque-leds (Kiwano)   | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Complete                            | Open source                  | https://github.com/Ariamelon/Kiwano/                                         |
+| pmw3360                              | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   | Complete                            | Open source                  | https://github.com/sadekbaroudi/vik/tree/master/pcb/pmw3360/                 |
+| ssd1351 (Crenshaw)                   | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 | Complete                            | Open source                  | https://github.com/Ariamelon/Crenshaw/                                       |
