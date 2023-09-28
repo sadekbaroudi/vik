@@ -2,4 +2,4 @@ Designator,Footprint,Quantity,Value,LCSC Part #
 "H1, H2, H3, H4",MountingHole_2.2mm_M2_DIN965_Pad,4,MountingHole,
 J1,vik-module-connector-horizontal,1,~,C479750
 J2,Pimoroni Haptic Buzz DRV2605L Driver,1,Pimoroni,
-"R1, R2",0805,2,4.7k,C269746
+"R1, R2",D3_TH_SMD,2,4.7k,C104821
