@@ -980,8 +980,8 @@
     (property "Substitute" "Y" (at 180.086 65.532 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22321618-1dc1-4ae3-987c-878dd384c827))
-    (pin "2" (uuid 23a06dd5-b2e8-4eeb-b51a-d4bd4e3ffd41))
+    (pin "1" (uuid d19a6d69-3fa4-4a45-8202-e840a35a04bc))
+    (pin "2" (uuid e435f869-5291-4c29-b2c3-faa7436276b2))
     (instances
       (project "waveshare-22224"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
@@ -1034,8 +1034,8 @@
     (property "LCSC" "C17900" (at 173.736 70.612 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1875a273-76af-4abc-8924-4d1e8b30c728))
-    (pin "2" (uuid 846b00ed-c76f-4f14-8eb5-68aa9e0a5d4c))
+    (pin "1" (uuid 41e607f4-6087-4832-a154-d1d3d15d79bf))
+    (pin "2" (uuid 7f68cccf-02a8-4cec-94c0-8d7ac329c2e8))
     (instances
       (project "waveshare-22224"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
