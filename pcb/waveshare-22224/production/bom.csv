@@ -1,0 +1,5 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+C1,0402,1,1u,C52923
+J1,vik-module-connector-horizontal,1,~,C479750
+J2,JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal-Bridge,1,Conn_01x08_Socket,
+R1,1206,1,100k,C17900
