@@ -1,0 +1,85 @@
+20376155000859
+local
+AP7331
+SOT25(H=1.45mm)
+Integrated Circuit
+0
+5
+5
+local
+C_0201_0603Metric
+Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
+capacitor
+0
+4
+2
+local
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+local
+D3_TH_SMD
+Resitance 3 pas
+R
+0
+4
+2
+local
+DIP-16_W10.16mm
+16-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
+THT DIP DIL PDIP 2.54mm 10.16mm 400mil
+0
+16
+16
+local
+FPC-SMD_FPC05012-09200-.5mm-rev
+
+
+0
+14
+14
+local
+HEF4104BT
+
+
+0
+16
+16
+local
+R_0201_0603Metric
+Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
+resistor
+0
+4
+2
+local
+R_0603_1608Metric
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+local
+SOIC127P600X175-14N
+
+
+0
+14
+14
+local
+SOT95P285X145-5N
+SOT25(H=1.45mm)
+Integrated Circuit
+0
+5
+5
+local
+fingerpunch-logo-small
+
+
+0
+0
+0
