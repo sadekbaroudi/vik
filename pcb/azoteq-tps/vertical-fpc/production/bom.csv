@@ -1,0 +1,4 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+J1,vik-module-connector-vertical,1,~,C2919479
+J2,Pad_06_2.00mm,1,Conn_01x06_Socket,
+"R1, R2",0805,2,4.7k,C115310
