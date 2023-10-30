@@ -4,6 +4,26 @@
 
 This is a VIK module made to add a VIK connector to the [Waveshare 22224 1.47in display](https://www.waveshare.com/1.47inch-lcd-module.htm) breakout board.
 
+## Assembly
+
+If you did not do PCBA on the VIK module (the hand solder gerbers):  
+1. Solder the FPC connector onto the module
+2. Solder a 0805 100k-200k ohms resistor (the pads right next to the 3v3 marking)
+3. Solder a 0805 1uF capacitor (the pads above the resistor pads in step 2 above)
+
+If you did PCBA, skip the steps above and continue here:  
+1. Add solder to each pad on the VIK module
+2. Remove the existing connector from the waveshare. Cut the leads and around the plastic of the connector, and de-solder the remaining pieces one by one
+3. Put a piece of non-conductive tape cut out to the inside of the connector (just to ensure there are no shorts)
+4. Line up the pads of the VIK module with the waveshare module, and heat up the pads one by one, adding solder each time, making sure 5. the pads form a connection between the waveshare and the VIK module
+
+
+![waveshare-22224-soldering-01](images/waveshare-22224-soldering-01.jpg)
+
+![waveshare-22224-soldering-02](images/waveshare-22224-soldering-02.jpg)
+
+![waveshare-22224-soldering-working](images/waveshare-22224-working.jpg)
+
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
