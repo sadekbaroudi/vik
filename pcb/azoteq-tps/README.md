@@ -44,4 +44,9 @@ Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com
 
 ![pcb back](vertical-fpc/images/azoteq-tps-module-back.png)
 
+#### assembled vertical
+
+![assembled-vertical-1](vertical-fpc/images/assembled-vertical-1.jpg)
+
+![assembled-vertical-2](vertical-fpc/images/assembled-vertical-2.jpg)
 
