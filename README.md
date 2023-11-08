@@ -407,6 +407,7 @@ General example:
 | [Honeydew](https://github.com/Ariamelon/Honeydew/)                                                       | 63    | Unibody | Work in progress                    | Open source                  | [Ariamelon](https://github.com/Ariamelon/Honeydew/)                 |
 | [ximi](https://fingerpunch.xyz/product/ximi/)                                                            | 36/42 | Split   | Complete                            | Commercial                   | [Sadek Baroudi](https://github.com/sadekbaroudi/)                   |
 | [Benboard](https://github.com/ben-labs-ltd/benboard) / [Benboard - commercial](https://ben-labs.co.uk/)  | 42    | Split   | Work in progress                    | Commercial / Open source     | [Ben](https://github.com/ben-labs-ltd/)                             |
+| [DragonFruit](https://github.com/protieusz/DragonFruit)                                                  | 38    | Unibody | Complete                            | Open source                  | [protieusz](https://github.com/protieusz/)                          |
 
 ### Modules
 
