@@ -398,6 +398,13 @@ General example:
 
 ## Known list of VIK certifications
 
+### Controllers
+
+| Name                                                                                                     | GPIO (excluding VIK connector) | Status                              | Open source or Commercial    | Creator                                                             |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------- | ---------------------------- | ------------------------------------------------- |
+| [svlinky](https://github.com/sadekbaroudi/svlinky/)                                                      | 18                             | Complete                            | Open source                  | [Sadek Baroudi](https://github.com/sadekbaroudi/) |
+| [xivik](https://fingerpunch.xyz/product/xivik/)                                                          | 11                             | In progress                         | Commercial                   | [Sadek Baroudi](https://github.com/sadekbaroudi/) |
+
 ### Keyboards
 
 | Name                                                                                                     | Keys  | Style   | Status                              | Open source or Commercial    | Creator                                                             |
