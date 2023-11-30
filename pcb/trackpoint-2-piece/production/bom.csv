@@ -1,6 +1,5 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
 C1,0805,1,2.2uF,C377773
-"H1, H2, H3, H4",MountingHole_2.2mm_M2_DIN965_Pad,4,MountingHole,
 J1,vik-module-connector-horizontal,1,~,C479750
 J2,Connector_THT_1x5_2.54,1,Conn_1x05_THT,
 J3,TE_1-84953-2_1x12-1MP_P1.0mm_Horizontal,1,Conn_01x12_Socket,C262367
