@@ -4,8 +4,6 @@
 
 This is a VIK module made to connect the [trackpoint 2 piece](https://deskthority.net/wiki/TrackPoint_Hardware#2-piece_Trackpoint) breakout board.
 
-Credit for images: from https://deskauthority.net/wiki/TrackPoint_Hardware
-
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
@@ -44,3 +42,10 @@ Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com
 ![trackpoint module front](images/Trackpoint_2_piece_module_front.png)
 
 ![trackpoint module pinout](images/Trackpoint_2_piece_module_pinout.png)
+
+## Credit
+
+Thank you to crehmann for testing this module with their design of the following keyboard, clear instructions and images. This was monumentally helpful in getting this ironed out quickly:  
+https://github.com/crehmann/TPS42  
+
+Images: from https://deskauthority.net/wiki/TrackPoint_Hardware  
