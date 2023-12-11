@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "vik")(type "KiCad")(uri "${KIPRJMOD}/../..//kicad/vik.kicad_sym")(options "")(descr ""))
+  (lib (name "joystick_analog_xy")(type "KiCad")(uri "${KIPRJMOD}/lib/joystick_analog_xy.kicad_sym")(options "")(descr ""))
+  (lib (name "sparkfun_9032_joystick_thumb")(type "KiCad")(uri "${KIPRJMOD}/lib/sparkfun_9032_joystick_thumb.kicad_sym")(options "")(descr ""))
+  (lib (name "sparkfun_9426_joystick_psp1000")(type "KiCad")(uri "${KIPRJMOD}/lib/sparkfun_9426_joystick_psp1000.kicad_sym")(options "")(descr ""))
+)
