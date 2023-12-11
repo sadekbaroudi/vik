@@ -1,0 +1,7 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"_2, ",,2,,
+"D1001, D1002, D1003, D1004",SK6812MINI-E-no-switch-outline,4,SK6812MINI-E,
+"J1001, J1007, J1013",SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm,3,Conn_01x01_Socket,
+J1003,vik-module-connector-horizontal,1,~,C2919557
+SW1001,EVQWGD001,1,EVQWGD001,
+SW1002,RotaryEncoder_EC11-no-legs,1,RotaryEncoder,

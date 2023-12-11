@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "vik")(type "KiCad")(uri "${KIPRJMOD}/../..//kicad/vik.kicad_sym")(options "")(descr ""))
+  (lib (name "evqwgd001")(type "KiCad")(uri "${KIPRJMOD}/lib/evqwgd001.kicad_sym")(options "")(descr ""))
+  (lib (name "sk6812mini-e")(type "KiCad")(uri "${KIPRJMOD}/lib/sk6812mini-e.kicad_sym")(options "")(descr ""))
+)
