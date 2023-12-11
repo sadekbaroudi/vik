@@ -1,6 +1,7 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
 "_2, ",,2,,
 "J1001, J1007",SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm,2,Conn_01x01_Socket,
+J1002,TE_0-1734839-5_1x05-1MP_P0.5mm_Horizontal,1,Conn_01x05_Socket,C3041165
 J1003,vik-module-connector-horizontal,1,~,C2919557
 JOY1001,joystick_analog_xy,1,JOYSTICK_ANALOG_XY,
 S1001,sparkfun_9032_joystick_thumb,1,JOYSTICK_THUMB,

@@ -2,9 +2,10 @@
 
 ## Overview
 
-This is a vik module to support the following two joysticks:  
+This is a vik module to support the following joysticks:  
 * [adafruit 2765](https://www.adafruit.com/product/2765)
 * [sparkfun 9032](https://www.sparkfun.com/products/9032)
+* [nintendo joycon joystick](https://www.amazon.com/Replacement-Joystick-Nintendo-Original-Professional/dp/B08397JQZG/)
 
 Please note that this PCB does **not** support the click on the sparkfun analog joystick, only x and y movements
 
@@ -40,3 +41,14 @@ Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com
 ![pcb front](images/joysticks-module-front.png)
 
 ![pcb back](images/joysticks-module-back.png)
+
+
+## joycon joystick wiring
+
+Caution: I have not tested the joycon joystick, but I wired per the image below  
+
+I got this diagram from here:  
+https://sudomod.com/forum/viewtopic.php?t=3485
+  
+
+![joycon wiring](images/joycon-wiring.png)
