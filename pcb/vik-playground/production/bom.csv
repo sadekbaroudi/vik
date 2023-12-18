@@ -1,0 +1,14 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"C2, C3",0805,2,0.1uF,C49678
+"D1, D2, D3, D4, D5, D6",D_SOD-123,6,1N4148W,C909967
+"D100, D101, D102, D103",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,4,WS2812B,C2761795
+J1,vik-module-connector-horizontal,1,~,C479750
+"J17, J2, J3, J4, J5, J6",PinSocket_1x08_P2.54mm_Vertical,6,Conn_01x08_Socket,C27438
+"JP1, JP2, JP3, JP4, JP5, JP6",SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,6,Jumper_2_Open,
+"JP7, JP8, JP9",SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm,3,Jumper_2_Bridged,
+R7,0805,1,10kΩ,C17414
+"R8, R9",0805,2,4.7kΩ,C17673
+"SW1, SW2, SW3, SW4, SW5, SW6",gateron-ks27-choc-v1-mx-soldered-and-hotswap,6,SW_Push,
+SW10,RotaryEncoder_EC11-no-legs,1,RotaryEncoder_Switch,
+U1,SOIC-16_3.9x9.9mm_P1.27mm,1,SN74HC595,C5947
+U2,SOIC-28W_7.5x17.9mm_P1.27mm,1,MCP23017-E/SO,C47023
