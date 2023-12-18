@@ -4289,11 +4289,11 @@
     (property "Datasheet" "~" (at 59.69 216.535 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C14663" (at 59.69 216.535 90)
+    (property "LCSC" "C49678" (at 59.69 216.535 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f3531a78-8dd2-4ce5-94ea-88505c4cdd6d))
-    (pin "2" (uuid 9a7e5bf3-113c-470d-8e34-444b197f81a5))
+    (pin "1" (uuid 1376c3d0-e69d-49a7-9aa9-7571d1257a49))
+    (pin "2" (uuid 4f48a6ac-796c-4a62-81a5-51e6853336d8))
     (instances
       (project "vik-playground"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"

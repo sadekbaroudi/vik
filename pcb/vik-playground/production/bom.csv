@@ -1,5 +1,5 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
-"C1, C2, C3",0805,3,0.1uF,C14663
+"C1, C2, C3",0805,3,0.1uF,C49678
 "D1, D2, D3, D4, D5, D6",D_SOD-123,6,1N4148W,C909967
 "D100, D101, D102, D103",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,4,WS2812B,C2761795
 J1,vik-module-connector-horizontal,1,~,C479750
