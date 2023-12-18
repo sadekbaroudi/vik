@@ -14,7 +14,8 @@ It includes:
 
 All pins are broken out. If you have female headers connected, you can experiment with your wiring, write firmware, and prototype / test features.  
 
-Big thank you to GeorgeN for the suggestion for this module!
+Big thank you to GeorgeN for the suggestion for this module  
+Thanks to [petejohanson](https://github.com/petejohanson/) for providing additional tips along the way  
 
 ## Fabrication and BOM
 
