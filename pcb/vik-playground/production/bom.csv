@@ -5,7 +5,7 @@ Designator,Footprint,Quantity,Value,LCSC Part #
 J1,vik-module-connector-horizontal,1,~,C479750
 "J17, J2, J3, J4, J5, J6",PinSocket_1x08_P2.54mm_Vertical,6,Conn_01x08_Socket,C27438
 JP10,PinHeader_1x02_P2.00mm_Vertical,1,Row Col Matrix,
-"JP7, JP8, JP9",SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,3,Jumper_2_Bridged,
+"JP7, JP8, JP9",PinHeader_1x02_P2.00mm_Vertical,3,Jumper_2_Bridged,
 R1,0805,1,10k,C17414
 R7,0805,1,10kΩ,C17414
 "R8, R9",0805,2,4.7kΩ,C17673
