@@ -1413,6 +1413,9 @@
     )
   )
 
+  (junction (at 291.465 33.655) (diameter 0) (color 0 0 0 0)
+    (uuid 0bd831e8-9aef-480e-b2d1-247d783a96ee)
+  )
   (junction (at 123.825 136.525) (diameter 0) (color 0 0 0 0)
     (uuid 157ec922-652b-463e-8b8f-f3070fe02951)
   )
@@ -1490,9 +1493,6 @@
   )
   (junction (at 84.455 236.855) (diameter 0) (color 0 0 0 0)
     (uuid c69e06de-f8d6-4c5b-85a2-a71ea6024a54)
-  )
-  (junction (at 291.465 33.655) (diameter 0) (color 0 0 0 0)
-    (uuid d58eeb8d-98ed-4fec-b032-0f714de39f11)
   )
   (junction (at 157.48 262.89) (diameter 0) (color 0 0 0 0)
     (uuid e1409ca4-be7d-4e7e-b6a5-ec000316f010)
@@ -3756,6 +3756,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 291.465 33.655 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 72b61c44-24ae-4994-a049-8f6971497d23)
+    (property "Reference" "#PWR01" (at 291.465 37.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 291.465 27.305 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 291.465 33.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 291.465 33.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid be6f7c48-3485-46c1-8ff4-254b3bd6e42a))
+    (instances
+      (project "vik-playground"
+        (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
+          (reference "#PWR01") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 77.47 36.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 73ffa6ff-5eea-4b39-aac3-1aef728ef3ea)
@@ -4406,31 +4431,6 @@
       (project "vik-playground"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
           (reference "D3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 291.465 33.655 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c08a810d-e333-4804-a1d9-2135b020ad01)
-    (property "Reference" "#PWR01" (at 291.465 37.465 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 291.846 30.4038 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 291.465 33.655 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 291.465 33.655 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a662c307-e4c2-458d-be23-c898535f1b87))
-    (instances
-      (project "vik-playground"
-        (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
-          (reference "#PWR01") (unit 1)
         )
       )
     )
