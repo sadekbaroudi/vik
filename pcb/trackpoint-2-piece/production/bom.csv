@@ -4,5 +4,6 @@ J1,vik-module-connector-horizontal,1,~,C479750
 J2,Connector_THT_1x5_2.54,1,Conn_1x05_THT,
 J3,TE_1-84953-2_1x12-1MP_P1.0mm_Horizontal,1,Conn_01x12_Socket,C262367
 J4,Connector_THT_1x3_2.54,1,Conn_01x03_Socket,
-"R3, R4",D3_TH_SMD,2,4.7kΩ,C104821
-R5,D3_TH_SMD,1,100kΩ,C17900
+"Q1, Q2",SOT-23,2,BSS138,C78284
+"R1, R2, R3, R4",0805,4,10k,C17414
+R5,0805,1,100kΩ,C149504

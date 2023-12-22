@@ -1525,8 +1525,8 @@
     (property "LCSC" "C17414" (at 152.654 146.304 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 9c87d485-f00a-45b2-ac26-d6ade8cdbf73))
     (pin "1" (uuid 9d228cb9-c6f8-42de-8072-e02b447160fd))
+    (pin "2" (uuid 9c87d485-f00a-45b2-ac26-d6ade8cdbf73))
     (instances
       (project "trackpoint_2_piece"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
@@ -1673,8 +1673,8 @@
     (property "LCSC" "C17414" (at 126.492 146.304 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid f0df964f-6ee4-407d-8209-3d93e70d7543))
     (pin "1" (uuid 30c05dfa-4a45-44e5-bf1b-da5fadf2e35c))
+    (pin "2" (uuid f0df964f-6ee4-407d-8209-3d93e70d7543))
     (instances
       (project "trackpoint_2_piece"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
@@ -1702,8 +1702,8 @@
     (property "LCSC" "C17414" (at 224.79 146.304 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 3762125e-bb4f-4775-9836-7f8e631319d8))
     (pin "1" (uuid 2c906118-be8f-4650-bd8e-4e3fc2f6dee8))
+    (pin "2" (uuid 3762125e-bb4f-4775-9836-7f8e631319d8))
     (instances
       (project "trackpoint_2_piece"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"
@@ -2070,8 +2070,8 @@
     (property "LCSC" "C17414" (at 198.628 146.304 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 03f9489d-1c8f-42e2-b2fd-fc5415f395b9))
     (pin "1" (uuid 43635d44-85ca-4d87-86d0-949e38ff4086))
+    (pin "2" (uuid 03f9489d-1c8f-42e2-b2fd-fc5415f395b9))
     (instances
       (project "trackpoint_2_piece"
         (path "/61fe293f-6808-4b7f-9340-9aaac7054a97"

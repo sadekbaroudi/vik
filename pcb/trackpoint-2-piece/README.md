@@ -4,6 +4,8 @@
 
 This is a VIK module made to connect the [trackpoint 2 piece](https://deskthority.net/wiki/TrackPoint_Hardware#2-piece_Trackpoint) breakout board.
 
+The through holes should be used if connecting this to a controller that uses 5v logic. The VIK connector is assumed to be connecting to a 3.3v controller, so the logic levels are 3.3v.
+
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
@@ -47,5 +49,9 @@ Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com
 
 Thank you to crehmann for testing this module with their design of the following keyboard, clear instructions and images. This was monumentally helpful in getting this ironed out quickly:  
 https://github.com/crehmann/TPS42  
+
+Thanks to quappo for doing the research on existing solutions for trackpoint connectivity  
+
+Thanks to Pete Johanson for adding the logic level conversion circuitry.  
 
 Images: from https://deskauthority.net/wiki/TrackPoint_Hardware  
