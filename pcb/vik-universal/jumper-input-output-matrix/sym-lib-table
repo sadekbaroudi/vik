@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "sensor-rescue")(type "Legacy")(uri "${KIPRJMOD}/lib/sensor-rescue.lib")(options "")(descr ""))
+  (lib (name "SW-Microchip")(type "Legacy")(uri "${KIPRJMOD}/lib/SW-Microchip.lib")(options "")(descr ""))
+  (lib (name "HEF4104BT")(type "Legacy")(uri "${KIPRJMOD}/lib/HEF4104BT.lib")(options "")(descr ""))
+  (lib (name "TXS0104EDR")(type "Legacy")(uri "${KIPRJMOD}/lib/TXS0104EDR.lib")(options "")(descr ""))
+  (lib (name "AP7331-WG-7")(type "Legacy")(uri "${KIPRJMOD}/lib/AP7331-WG-7.lib")(options "")(descr ""))
+  (lib (name "vik")(type "KiCad")(uri "${KIPRJMOD}/../../../kicad/vik.kicad_sym")(options "")(descr ""))
+  (lib (name "fingerpunch_jumpers")(type "KiCad")(uri "${KIPRJMOD}/lib/fingerpunch_jumpers.kicad_sym")(options "")(descr ""))
+)
