@@ -1,10 +1,10 @@
-# VIK universal (jumper input output matrix)
+# VIK universal (handwire)
 
 ## Overview
 
 This is a simple pcb that allows you to connect any series of up to 12 pin headers to a VIK connector, in any order.
 
-You solder 1 (and ONLY 1) jumper per row, and it connects it to the corresponding VIK signal.
+You wire 1 through hole from the bottom to one from the top, which connects a 3rd party module or board to any VIK signal you want.
 
 ## Fabrication and BOM
 
