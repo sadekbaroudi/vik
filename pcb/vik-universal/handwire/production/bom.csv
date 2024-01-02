@@ -1,4 +1,5 @@
 Designator,Footprint,Quantity,Value,LCSC Part #
 "J1001, J1002",PinSocket_1x12_P2.54mm_Vertical,2,Conn_01x01_Socket,
 J1003,vik-module-connector-horizontal,1,~,C2919557
+"JP1001, JP1002",SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,2,SolderJumper_2_Open,
 "R1001, R1002",D3_TH_SMD,2,4.7k,C104821
