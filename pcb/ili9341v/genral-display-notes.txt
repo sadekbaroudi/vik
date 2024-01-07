@@ -1,0 +1,26 @@
+Pulled from Adafruit's guide, found here:
+https://learn.adafruit.com/2-2-tft-display/pinouts
+
+Information below is written to a specific Adafruit display, but generally applicable to most display devices
+
+------------------------------------------------
+
+GND - this is the power and signal ground pin
+
+Vin - this is the power pin, connect to 3-5VDC - it has reverse polarity protection but try to wire it right!
+
+D/C - this is the TFT SPI data or command selector pin. Use 3-5V logic level
+
+RESET - this is the TFT reset pin. Connect to ground to reset the TFT! Its best to have this pin controlled by the library so the display is reset cleanly, but you can also connect it to the Arduino Reset pin, which works for most cases. There is an automatic-reset chip connected so it will reset on power-up. Use 3-5V logic level
+
+SD Card CS / SDCS - this is the SD card chip select, used if you want to read from the SD card. Use 3-5V logic level
+
+LCD_CS - this is the TFT SPI chip select pin. Use 3-5V logic level
+
+MOSI - this is the SPI Microcontroller Out Serial In pin, it is used to send data from the microcontroller to the SD card and/or TFT. Use 3-5V logic level
+
+MISO - this is the SPI Microcontroller In Serial Out pin, its used for the SD card. It isn't used for the TFT display which is write-only. It is 3.3V logic out (but can be read by 5V logic)
+
+CLK - this is the SPI clock input pin. Use 3-5V logic level
+
+Backlite - this is the PWM input for the backlight control. It is by default pulled high (backlight on) you can PWM at any frequency or pull down to turn the backlight off. Use 3-5V logic level
