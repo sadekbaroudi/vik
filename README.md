@@ -9,6 +9,11 @@
 > **Note**  
 > Please be aware that for keyboard pcbs, VIK assumes that it's running at 3.3v logic levels. This is easily achieved by using a RP2040. If you are using a 5v controller, it is the keyboard's responsibility to level shift before going to the VIK module. See the [Microcontroller selection](#microcontroller-selection) section below
 
+## License
+
+**The licensing for VIK works as follows:**  
+The main `LICENSE.md` in the git repository root directory applies to the whole repo, except where there is a `LICENSE.md` in the sub-folder. In that case, that `LICENSE.md` is then applied recursively until there is another `LICENSE.md` in any of its subdirectories (if any).
+
 ## Overview
 
 VIK is a standard for a data interface between printed circuit boards. It is intended to provide modularity between a mechanical keyboard pcb and additional features. The main pcb can have a controller and a switch matrix, while the modules can provide additional features.
