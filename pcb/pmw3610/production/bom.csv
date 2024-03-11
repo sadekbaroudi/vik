@@ -1,0 +1,11 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2, C3, C6, C7, C8, C9",0603,7,4.7uF,C19666
+C4,0603,1,0.1u,C14663
+C5,0603,1,1u,C15849
+"J2, J3",PinHeader_1x06_P2.54mm_Vertical,2,Conn_01x06_Female,
+J4,vik-module-connector-horizontal,1,~,C479750
+JP1,SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels,1,SolderJumper_3_Open,
+R1,0603,1,2M,C465466
+"R2, R3",D3_TH_SMD,2,4.7k,
+U1,SOT-23-5,1,TCR2EF19,C146366
+U2,PMW3610,1,PMW3610,
