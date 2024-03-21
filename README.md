@@ -68,6 +68,14 @@ The required connector is a FPC 12 pin 0.5mm pitch connector. It should be avail
 
 ![fpc 12 pin 0.5mm clamshell](images/fpc-12pin-clamshell.png)
 
+#### JLCPCB part selection tips
+
+I've received feedback that the recommended part number `C479750` for the fpc connector (`vik-{keyboard|module}-connector-horizontal`) is frequently out of stock. Fortunately, there are many equivalent parts that line up identically to this one.
+
+To find an equivalent, I generally just search for "12p 0.5mm fpc clamshell". Then I pick one that looks identical to `C479750`. During PCBA part placement, go into 3D mode and adjust the view to make sure the pads line up nicely with the connectors. An example of an alternative part number is `C2906115`.
+
+![fpc 12 pin 0.5mm clamshell alternative validation](images/fpc-12pin-clamshell-alternative-validation.png)
+
 ### Cable
 
 The cable should be a 12 pin 0.5mm pitch FPC Type A cable (leads are exposed on the same side).
