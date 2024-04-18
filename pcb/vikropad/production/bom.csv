@@ -1,0 +1,11 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D10, D11, D12, D13, D14, D15, D16, D17, D18, D2, D3, D4, D5, D6, D7, D8, D9",D_SOD-123,18,1N4148W,C909967
+"D21, D22, D23, D24, D25, D26, D27, D28, D29, D30",D_SOD-123,10,1N4148,C8598
+"HAT1, HAT2",5Way-Tactile_K1-1506DN-01,2,5Way-Tactile_K1-1506DN-01,
+J1,vik-module-connector-horizontal,1,~,C479750
+J2,PinHeader_1x01_P2.54mm_Vertical,1,Conn_01x01_Socket,
+"J3, J4, J5",PinHeader_1x02_P2.54mm_Vertical,3,Conn_01x02_Socket,
+"R8, R9",0805,2,4.7kΩ,C17673
+"SW1, SW10, SW11, SW12, SW13, SW14, SW15, SW16, SW17, SW18, SW2, SW3, SW4, SW5, SW6, SW7, SW8, SW9",gateron-ks27-choc-v1-mx-soldered-and-hotswap,18,SW_Push,
+"U1, U2",SOIC-16_3.9x9.9mm_P1.27mm,2,SN74HC595,C5947
+"U3, U4",DIP-16_W7.62mm,2,SN74HC595,
