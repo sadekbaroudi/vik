@@ -12,14 +12,15 @@ Module adheres to default small PCB size and mounting with additional holes for 
 
 For PCB fabrication, you can use the files in the production folder.
 
-- haptic-drv2605l.zip - the file used to fabricate the pcb
+- [haptic-drv2605l.zip](./production/haptic-drv2605l.zip) - the file used to fabricate the pcb
 
 ## BOM
 
 - DRV2605L motor controller
 - 2 1uF capacitors (SMD 1206 size)
-- 2 4.7kOm resistors (SMD 1206 size)
+- 2 4.7kOhm resistors (SMD 1206 size)
 - vertical and horizontal VIK connectors
+- LRA or ERM [motor](https://docs.qmk.fm/#/feature_haptic_feedback?id=known-supported-hardware)
 
 ## VIK module certification
 
@@ -35,7 +36,7 @@ For PCB fabrication, you can use the files in the production folder.
 | Uses: RGB               | Optional             | :x:                |
 | Uses: Extra GPIO 1      | Optional             | :x:                |
 | Uses: Extra GPIO 2      | Optional             | :x:                |
-| Standard PCB Size/Mount | Strongly recommended | :x:                |
+| Standard PCB Size/Mount | Strongly recommended | Small              |
 
 ## PCB images
 
