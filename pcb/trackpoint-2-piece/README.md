@@ -6,6 +6,15 @@ This is a VIK module made to connect the [trackpoint 2 piece](https://deskthorit
 
 The through holes should be used if connecting this to a controller that uses 5v logic. The VIK connector is assumed to be connecting to a 3.3v controller, so the logic levels are 3.3v.
 
+The overall design is as follows:
+* VIK uses 3.3V, so the 3.3V through holes all goes to the VIK connector, since VIK expects 3.3V logic.
+* The mosfets (etc) convert the 3.3V logic to 5V logic (and the other way around), so none of the 5V through holes are connected to the VIK connector. The trackpoint expects 5V logic
+* The 5V logic is all connected directly to the trackpoint, since as mentioned, the trackpoint expects 5V, and VIK does not
+
+The general usage of this is:
+* If you are connecting to a 5V controller, you just use the 5V through holes. You can't use the VIK connector
+* If you are connecting to a 3.3V controller, you can use either VIK connector or the 3.3V through holes
+
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
