@@ -367,11 +367,11 @@ A "perfect" keyboard card would look like this:
 | -----------------------  | ----------------------- | ------------------ |
 | FPC connector            | Required                | :heavy_check_mark: |
 | Breakout pins            | Recommended             | :heavy_check_mark: |
-| Supplies: SPI            | Strongly recommended    | :heavy_check_mark: |
-| Supplies: I2C            | Strongly recommended    | :heavy_check_mark: |
+| Supplies: SPI            | Required                | :heavy_check_mark: |
+| Supplies: I2C            | Required                | :heavy_check_mark: |
 | I2C on main PCB          | Discouraged             | no                 |
 | I2C pull ups             | Informative             | N/A                |
-| Supplies: RGB            | Strongly recommended    | :heavy_check_mark: |
+| Supplies: RGB            | Required                | :heavy_check_mark: |
 | Supplies: Extra GPIO 1   | Required                | Analog/Digital     |
 | Supplies: Extra GPIO 2   | Required                | Analog/Digital     |
 
