@@ -1,0 +1,3 @@
+*-backups
+production/*
+!production/*.zip

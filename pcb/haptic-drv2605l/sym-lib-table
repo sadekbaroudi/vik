@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "vik")(type "KiCad")(uri "${KIPRJMOD}/../../kicad/vik.kicad_sym")(options "")(descr ""))
+)
