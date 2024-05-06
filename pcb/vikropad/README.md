@@ -23,6 +23,9 @@ For PCB fabrication, you can use the files in the production folder.
 
 Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com)
 
+## vikropad case files
+
+You can find the [vikropad case files](https://github.com/sadekbaroudi/fingerpunch/tree/master/keyboards/vikropad) in the fingerpunch github repository
 
 ## VIK module certification
 
