@@ -14,6 +14,10 @@ The PMW3610 sensor is a low power sensor, and uses serial data communication wit
 
 That said, if you understand the above, you can still use this module with no issues.
 
+## Alternate parts
+
+The LDO seems to be frequently out of stock at JLCPCB. The part number specified in this module is `C146366`. As an alternate part, you can try to use `C2862411` or `C2869109` (`TLV70019DDCR` or `TLV70019DDCT`, respectively)
+
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
