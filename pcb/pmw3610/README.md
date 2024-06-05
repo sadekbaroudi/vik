@@ -8,6 +8,12 @@ The most common use in the keyboard community is for trackballs.
 
 Note that while I2C, RGB, and extra GPIO are broken out, but are not used in the circuitry, so they are not needed for the sensor. There are also footprints for I2C pull up resistors, which are also not needed, as I2C is not used.
 
+There is a jumper for NRESET, with an option to:  
+* Route to 3.3V, which means that it's inactive
+* Route to the VIK GPIO 1, which allows you to control the state with the connected controller
+
+You do not need to solder the jumper at all, since there is a weak pull up resistor in the PMW3610, but if you have any trouble with the state, and want to explicitly attach to 3.3V, you can.
+
 ## IMPORTANT
 
 The PMW3610 sensor is a low power sensor, and uses serial data communication with a motion status pin (to reduce power consumption). This pcb uses the SPI pins, but is not standard SPI communication. This means that you cannot connect this module to a controller or board that uses the VIK SPI pins for any other purpose. These are being treated as standard GPIO for this module. This is not a VIK compliant module!
