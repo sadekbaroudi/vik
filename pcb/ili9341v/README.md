@@ -37,6 +37,10 @@ Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com
 
 ![pcb back](images/ili9341v-module-back.png)
 
+## Assembled image
+
+![assembled](images/ili9341v-working-photo.jpg)
+
 ## Product images
 
 ![pcb front](images/module-frontside.png)
