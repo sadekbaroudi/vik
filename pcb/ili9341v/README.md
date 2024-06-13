@@ -14,6 +14,10 @@ For PCB fabrication, you can use the files in the production folder.
 
 Using the 3 files above, this has been tested at [jlcpcb.com](https://jlcpcb.com)
 
+# Display module dimensions
+
+Look inside the `./images/` directory for dimensions for the various modules that this has been tested to work with. These images were all pulled from [lcdwiki.org](http://www.lcdwiki.com/Main_Page)
+
 
 ## VIK module certification
 
