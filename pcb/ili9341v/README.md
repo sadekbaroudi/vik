@@ -4,6 +4,10 @@
 
 This is a VIK module made to add a VIK connector to the [ILI9341](https://www.aliexpress.us/item/3256805692275620.html) board ([alternate link](https://www.aliexpress.us/item/3256805720349132.html))
 
+## Display housing 3D models
+
+I have put together [display housings and covers](https://github.com/sadekbaroudi/fingerpunch/tree/master/3d-models/display-housings/ili9341) for this module, in the form of step files that you can download and incorporate into your own design.
+
 ## Fabrication and BOM
 
 For PCB fabrication, you can use the files in the production folder.
