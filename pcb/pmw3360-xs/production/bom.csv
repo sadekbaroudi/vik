@@ -3,7 +3,7 @@ Designator,Footprint,Quantity,Value,LCSC Part #
 C1001,0603,1,4.7uF,C19666
 "C1002, C1005",0603,2,1uF,C15849
 IC1001,SOT-23-5_HandSoldering,1,AP7335-WG-7,C460382
-"J1001, J1002, J1004, J1005, J1006, J1007",SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm,6,Conn_01x01_Socket,
+"J1001, J1002, J1004, J1005, J1006, J1007, J1008",SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm,7,Conn_01x01_Socket,
 J1003,vik-module-connector-horizontal,1,~,C2919557
 "R1001, R1004",0603,2,10k,C25804
 R1002,0603,1,39,C23154

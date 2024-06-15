@@ -1284,6 +1284,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x01_Socket") (at 92.202 160.782 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7edef678-2565-4255-8c18-11b7f6679d9e)
+    (property "Reference" "J1008" (at 92.9132 159.758 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x01_Socket" (at 92.9132 161.806 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm" (at 92.202 160.782 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 92.202 160.782 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9b447024-ad34-4953-8720-145635831a45))
+    (instances
+      (project "pmw3360"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "J1008") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Connector:Conn_01x01_Socket") (at 92.456 151.892 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7fc0c982-8d50-440b-8c22-31dd225a148c)
@@ -1439,6 +1464,31 @@
       (project "pmw3360"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "J1007") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 87.122 160.782 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ccc8d18c-084e-40e4-9b9c-65f72e7ac96f)
+    (property "Reference" "#PWR01002" (at 80.772 160.782 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 82.7278 160.655 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 87.122 160.782 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 87.122 160.782 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0e9383bc-da05-4df0-899c-d16036cee75b))
+    (instances
+      (project "pmw3360"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR01002") (unit 1)
         )
       )
     )
