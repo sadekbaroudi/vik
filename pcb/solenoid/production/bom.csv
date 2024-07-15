@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+D1001,D_DO-41_SOD81_P7.62mm_Horizontal,1,1N4001,
+J1001,PinHeader_1x02_P2.54mm_Vertical,1,Conn_01x02_Female,
+J1002,PinHeader_1x06_P2.54mm_Vertical,1,Conn_01x06_Female,
+J1003,vik-module-connector-horizontal,1,~,C479750
+Q1001,TO-220-3_Vertical,1,TIP120,
+R1001,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,1,R2.2,
