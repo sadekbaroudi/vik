@@ -5,8 +5,7 @@
   (paper "A4")
 
   (title_block
-    (company "bastard keyboards")
-    (comment 4 "Copyright Quentin Lebastard")
+    (comment 4 "https://github.com/sadekbaroudi/vik")
   )
 
   (lib_symbols
