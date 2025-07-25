@@ -417,8 +417,8 @@ General example:
 | -------------------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------- | ---------------------------- | ------------------------------------------------- |
 | [svlinky](https://github.com/sadekbaroudi/svlinky/)                                                      | 18                             | Complete                            | Open source                  | [Sadek Baroudi](https://github.com/sadekbaroudi/) |
 | [xivik](https://fingerpunch.xyz/product/xivik/)                                                          | 11                             | Complete                            | Commercial                   | [Sadek Baroudi](https://github.com/sadekbaroudi/) |
-| [lemon-microcontroller](https://github.com/rianadon/Cosmos-Keyboard-PCBs)                                | 19                             | Work in progress                    | Open Source / Commercial     | [rianadon](https://github.com/rianadon/)          |
-| [lemon-wireless](https://github.com/rianadon/Cosmos-Keyboard-PCBs)                                       | 15                             | Work in progress                    | Open Source / Commercial     | [rianadon](https://github.com/rianadon/)          |
+| [lemon-microcontroller](https://github.com/rianadon/Cosmos-Keyboard-PCBs)                                | 19                             | Complete                            | Open Source / Commercial     | [rianadon](https://github.com/rianadon/)          |
+| [lemon-wireless](https://github.com/rianadon/Cosmos-Keyboard-PCBs)                                       | 15                             | Complete                            | Open Source / Commercial     | [rianadon](https://github.com/rianadon/)          |
 
 ### Keyboards
 
