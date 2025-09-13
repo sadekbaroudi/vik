@@ -1,0 +1,14 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,1u,C_0603_1608Metric,143.777,-101.0,0.0,bottom
+C2,1u,C_0603_1608Metric,140.462,-101.0,0.0,bottom
+C3,100n,C_0603_1608Metric,136.665,-101.0,0.0,bottom
+C4,10n,C_0603_1608Metric,133.096,-101.0,0.0,bottom
+C5,100n (X7R),C_0603_1608Metric,129.54,-101.092,0.0,bottom
+C6,10u (X7R),C_0603_1608Metric,127.825,-82.0,0.0,bottom
+C7,10n (X7R),C_0603_1608Metric,127.825,-85.0,0.0,bottom
+C8,100n,C_0603_1608Metric,127.825,-88.0,0.0,bottom
+C9,3.3u/25V,C_0603_1608Metric,127.825,-91.0,0.0,bottom
+J2,vik-module-connector,vik-module-connector-vertical,136.112,-99.298,0.0,top
+R1,2M,R_0603_1608Metric,127.825,-94.0,0.0,bottom
+U1,MCP1700T-1802E/TT,SOT-23,144.0,-94.0,0.0,bottom
+U2,PMW3610,PMW3610DM-SUDU 16Pin,136.0,-87.775,90.0,top

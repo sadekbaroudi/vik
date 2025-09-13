@@ -1,0 +1,10 @@
+Comment,Designator,Footprint,LCSC,Quantity
+100n,"C3,C5,C8",C_0603_1608Metric,C14663,3
+MCP1700T-1802E/TT,U1,SOT-23,C150796,1
+1u,"C1,C2",C_0603_1608Metric,C15849,2
+2M,R1,R_0603_1608Metric,C22976,1
+10u (X7R),C6,C_0603_1608Metric,C2959727,1
+3.3u/25V,C9,C_0603_1608Metric,C51412,1
+10n,"C4,C7",C_0603_1608Metric,C57112,2
+vik-module-connector,J2,vik-module-connector-vertical,,1
+PMW3610,U2,PMW3610DM-SUDU 16Pin,,1
